@@ -1,3 +1,26 @@
+@media (max-width:1080px) {
+
+#drupinas_slider {
+  .item {
+    .wrap {   
+      .inner {
+        padding: 15px 70px 40px 70px;
+      }
+    }
+  }
+
+  .owl-buttons {
+    top: 45%;
+  }
+}
+
+
+}
+
+
+
+
+
 @media (max-width:1000px) {
 
 .inner {
@@ -13,7 +36,7 @@
 }
 
 .content-container {
-  padding: 0px 10px;
+
 }
 
 .footer {

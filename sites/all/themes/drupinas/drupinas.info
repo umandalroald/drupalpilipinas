@@ -15,12 +15,23 @@ regions[sidebar_first]  = 'Sidebar First'
 regions[footer]         = 'Footer'
 
 
+regions[slider]         = 'Slider (Front)'
+regions[blog]           = 'Blog (Front)'
+regions[community]      = 'Community (Front)'
+regions[events]         = 'Events (Front)'
+regions[gallery]        = 'Gallery (Front)'
+regions[projects]       = 'Projects (Front)'
+regions[sponsors]       = 'Sponsors (Front)'
+
+
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
 stylesheets[all][] = css/font-awesome.css
+stylesheets[all][] = css/owl.carousel.css
 stylesheets[all][] = css/style.css
+
 
 
 ; For information on choosing the desired method, please read the Drupal
@@ -62,3 +73,5 @@ stylesheets[all][] = css/style.css
 
 scripts[] = 'js/vendor/modernizr.js'
 scripts[] = 'js/vendor/selectivizr.js'
+scripts[] = 'js/owl.carousel.js'
+scripts[] = 'js/script.js'

@@ -1,6 +1,70 @@
 <?php
 
+/**
+* Implements hook_block_info().
+*/
+function ruthiecustom_block_info() {
+  $blocks = array();
+  $blocks['sliderblock'] = array(
+    'info' => t('Block for Slider'),
+  );
+  return $blocks;
+}
+
 
 /**
- * Implements hook_menu
- */
+* Implements hook_block_view().
+*/
+function ruthiecustom_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'sliderblock':
+      $block['content'] = _customslider_CONTENT();
+      break;
+  }
+  return $block;
+}
+
+
+
+function _customslider_return_nodes() {
+  $query = new EntityFieldQuery();
+  $query
+  ->entityCondition('entity_type', 'node')
+  ->entityCondition('bundle', 'slider_entries');
+
+  $result = $query->execute();
+  $nodes = array();
+  if (isset($result['node'])) {
+    $nids = array_keys($result['node']);
+    $nodes = node_load_multiple($nids);
+  }
+  return $nodes;
+}
+
+
+/**
+* Return the content of Slider Block.
+*/
+
+function _customslider_CONTENT() {
+  $nodes = _customslider_return_nodes();
+  $content = '';
+  //$list = array();
+  foreach ($nodes as $node) {
+    $image = image_style_url('940x400px_image_slider', $node->field_slider_image['und'][0]['filename']);
+    $title = $node->title;
+    $body = $node->body['und'][0]['safe_value'];
+
+    $content .= '<div class="item"><img src="' . $image . '"><div class="wrap"><div class="inner"><h1>' . $title . '</h1><p>' . $body . '</p></div></div></div>';
+  }
+
+  $render = array (
+    'container2' => array (
+      '#prefix' => '<div id="drupinas_slider" class="owl-carousel owl-theme">',
+      '#markup' => $content,
+      '#suffix' => '</div>',
+    ),
+  );
+  return $render;
+}

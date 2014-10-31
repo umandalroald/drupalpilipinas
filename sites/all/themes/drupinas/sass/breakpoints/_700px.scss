@@ -19,3 +19,26 @@
 }
 
 }
+
+
+@media (max-width:730px) {
+
+#drupinas_slider {
+  .item {
+    .wrap {
+      position: relative;
+      display: block;
+      top: 35%;
+      width: 100%;
+      background: $theme-blue + 30;
+    }
+  }
+  .owl-buttons {
+    .owl-prev, .owl-next {
+      background: url(../images/black-opaque1.png) repeat;
+    }
+  }
+}
+
+}
+

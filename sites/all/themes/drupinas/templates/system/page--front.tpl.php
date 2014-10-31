@@ -129,6 +129,9 @@
   </div>
 </header>
 
+<?php print render($page['slider']); ?>
+
+
 <div class="content-container">
   <div class="inner">
     <?php if (!drupal_is_front_page()) { ?>
@@ -160,7 +163,8 @@
           ));
         ?>
       <?php endif; ?>
-    </div>
-    <?php print render($page['footer']); ?>
+    </div>  
   </div>
 </footer>
+
+

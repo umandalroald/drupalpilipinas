@@ -30,5 +30,15 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Myriadpro-Light';
+  src: url('../fonts/Myriadpro-Light.eot');
+  src: url('../fonts/Myriadpro-Light.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Myriadpro-Light.woff') format('woff'),
+       url('../fonts/Myriadpro-Light.ttf') format('truetype'),
+       url('../fonts/Myriadpro-Light.svg#helvetica-boldregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 

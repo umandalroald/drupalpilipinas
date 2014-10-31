@@ -1,0 +1,5 @@
+name = Ruthie Custom
+description = Custom For Theming
+core = 7.x
+php = 5
+package = Ruthie Custom Modules

@@ -1,0 +1,27 @@
+@media (max-width:615px) {
+
+
+.footer {
+  .left, .right {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .right {
+    border-top: 1px solid $theme-blue + 20;
+    span {
+      border-right: 1px solid $theme-blue + 20;
+    }
+  }
+
+  a, span {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+
+
+}
+

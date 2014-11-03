@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * Implements hook_init()
+ */
+function ng_drupal_init() {
+  if (drupal_is_front_page()) {
+    drupal_add_js('js/angular.min.js', 'file');
+  }
+}

@@ -74,4 +74,5 @@ stylesheets[all][] = css/style.css
 scripts[] = 'js/vendor/modernizr.js'
 scripts[] = 'js/vendor/selectivizr.js'
 scripts[] = 'js/owl.carousel.js'
+scripts[] = 'js/waypoints.min.js'
 scripts[] = 'js/script.js'

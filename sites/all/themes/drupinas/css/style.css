@@ -104,43 +104,62 @@ a, p, span {
 }
 
 /* line 82, ../sass/style.scss */
-.navigation-container {
+.header-top {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+}
+
+/* line 89, ../sass/style.scss */
+.navigation-container,
+.navigation-container-inner-pages {
   padding: 10px 0;
   width: 100%;
   border-bottom: 1px solid #0073ba;
   background: #fefefe;
 }
-/* line 87, ../sass/style.scss */
-.navigation-container .navbar {
+/* line 95, ../sass/style.scss */
+.navigation-container .navbar,
+.navigation-container-inner-pages .navbar {
   min-height: 50px;
   margin-bottom: 0px;
   border: 0px solid transparent;
 }
-/* line 92, ../sass/style.scss */
-.navigation-container .navbar-default {
+/* line 100, ../sass/style.scss */
+.navigation-container .navbar-default,
+.navigation-container-inner-pages .navbar-default {
   background-color: transparent;
 }
-/* line 96, ../sass/style.scss */
-.navigation-container li a {
+/* line 104, ../sass/style.scss */
+.navigation-container li a,
+.navigation-container-inner-pages li a {
   font-family: 'OpenSans-Regular';
   color: #888888 !important;
 }
-/* line 99, ../sass/style.scss */
-.navigation-container li a:hover {
+/* line 107, ../sass/style.scss */
+.navigation-container li a:hover,
+.navigation-container-inner-pages li a:hover {
   color: #0073ba !important;
 }
-/* line 104, ../sass/style.scss */
-.navigation-container li a.active {
+/* line 112, ../sass/style.scss */
+.navigation-container li a.active,
+.navigation-container-inner-pages li a.active {
   background-color: transparent !important;
   color: #0073ba !important;
 }
+/* line 118, ../sass/style.scss */
+.navigation-container li:last-child a,
+.navigation-container-inner-pages li:last-child a {
+  padding-right: 0px;
+}
 
-/* line 110, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 .content-container {
   width: 100%;
 }
 
-/* line 114, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 .footer {
   width: 100%;
   background: #0073ba;
@@ -149,43 +168,43 @@ a, p, span {
   padding-bottom: 0px;
   border-top: none;
 }
-/* line 122, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 .footer .left, .footer .right {
   display: inline-block;
   margin-right: -4px;
   width: 50%;
 }
-/* line 129, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 .footer .right {
   text-align: right;
 }
-/* line 131, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
 .footer .right span {
   padding-right: 20px;
   border-right: 1px solid #fff;
 }
-/* line 137, ../sass/style.scss */
+/* line 151, ../sass/style.scss */
 .footer #menu-footer-menu {
   list-style: none;
   margin: 0;
   padding: 0;
   display: inline-block;
 }
-/* line 143, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 .footer #menu-footer-menu li {
   display: inline-block;
   margin-right: -4px;
 }
-/* line 146, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .footer #menu-footer-menu li:last-child {
   margin-right: 0px;
 }
-/* line 149, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 .footer #menu-footer-menu li a {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 155, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 .footer a, .footer span {
   color: #fff;
   display: inline-block;
@@ -195,16 +214,18 @@ a, p, span {
   font-size: 1.125rem;
 }
 
-/* line 164, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 #drupinas_slider {
+  margin-top: 106px;
   position: relative;
   height: 100%;
+  background: #1e91d8;
 }
-/* line 168, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 #drupinas_slider .item img {
   width: 100%;
 }
-/* line 171, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 #drupinas_slider .item .wrap {
   position: absolute;
   top: 35%;
@@ -212,46 +233,117 @@ a, p, span {
   background: url(../images/black-opaque1.png) repeat;
   text-align: center;
 }
-/* line 178, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 #drupinas_slider .item .wrap .inner {
   padding: 15px 30px 40px 30px;
 }
-/* line 182, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 #drupinas_slider .item h1 {
   font-family: 'Myriadpro-Light';
   font-size: 90px;
   font-size: 5.625rem;
   color: #fff;
 }
-/* line 187, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 #drupinas_slider .item p {
   color: #fff;
 }
-/* line 191, ../sass/style.scss */
+/* line 207, ../sass/style.scss */
 #drupinas_slider .owl-buttons {
   position: absolute;
   width: 100%;
   top: 42%;
 }
-/* line 195, ../sass/style.scss */
+/* line 211, ../sass/style.scss */
 #drupinas_slider .owl-buttons .owl-prev, #drupinas_slider .owl-buttons .owl-next {
   display: inline-block;
   position: absolute;
   padding: 0 18px;
 }
-/* line 199, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 #drupinas_slider .owl-buttons .owl-prev i, #drupinas_slider .owl-buttons .owl-next i {
   color: #fff;
   font-size: 140px;
   font-size: 8.75rem;
 }
-/* line 204, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 #drupinas_slider .owl-buttons .owl-prev {
   left: 0px;
 }
-/* line 208, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 #drupinas_slider .owl-buttons .owl-next {
   right: 0px;
+}
+
+/* line 231, ../sass/style.scss */
+#blog,
+#community,
+#events,
+#gallery,
+#projects,
+#sponsors {
+  min-height: 800px;
+}
+/* line 239, ../sass/style.scss */
+#blog h1, #blog h2, #blog h3,
+#community h1,
+#community h2,
+#community h3,
+#events h1,
+#events h2,
+#events h3,
+#gallery h1,
+#gallery h2,
+#gallery h3,
+#projects h1,
+#projects h2,
+#projects h3,
+#sponsors h1,
+#sponsors h2,
+#sponsors h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* line 246, ../sass/style.scss */
+#blog {
+  background: #319075;
+}
+
+/* line 250, ../sass/style.scss */
+#community {
+  background: #520775;
+}
+
+/* line 254, ../sass/style.scss */
+#events {
+  background: #458075;
+}
+
+/* line 258, ../sass/style.scss */
+#gallery {
+  background: #313595;
+}
+
+/* line 262, ../sass/style.scss */
+#projects {
+  background: #319789;
+}
+
+/* line 266, ../sass/style.scss */
+#sponsors {
+  background: #325875;
+}
+
+/* line 271, ../sass/style.scss */
+a.click-to-top {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  background: url(../images/black-opaque1.png) repeat;
+  padding: 10px;
 }
 
 @media (max-width: 1080px) {
@@ -307,9 +399,14 @@ a, p, span {
   .navbar-collapse {
     margin-top: 10px;
   }
+
+  /* line 21, ../sass/breakpoints/_700px.scss */
+  #drupinas_slider {
+    margin-top: 94px;
+  }
 }
 @media (max-width: 730px) {
-  /* line 28, ../sass/breakpoints/_700px.scss */
+  /* line 33, ../sass/breakpoints/_700px.scss */
   #drupinas_slider .item .wrap {
     position: relative;
     display: block;
@@ -317,7 +414,7 @@ a, p, span {
     width: 100%;
     background: #1e91d8;
   }
-  /* line 37, ../sass/breakpoints/_700px.scss */
+  /* line 42, ../sass/breakpoints/_700px.scss */
   #drupinas_slider .owl-buttons .owl-prev, #drupinas_slider .owl-buttons .owl-next {
     background: url(../images/black-opaque1.png) repeat;
   }

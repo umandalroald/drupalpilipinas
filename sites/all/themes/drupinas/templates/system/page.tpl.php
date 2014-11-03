@@ -102,7 +102,7 @@
 <?php endif; ?>
 
 
-<header class="navigation-container">
+<header class="navigation-container-inner-pages">
   <div class="inner">
     <nav role="navigation" class="navbar navbar-default">
       <div class="navbar-header">
@@ -120,8 +120,10 @@
       </div>
       <div id="navbarCollapse" class="collapse navbar-collapse">
         <nav role="navigation">
-          <?php if (!empty($primary_nav)): ?>
-            <?php print render($primary_nav); ?>
+          <?php if ($menu = menu_navigation_links('menu-main-menu-inner-pages-')) : ?>
+            <?php print theme('links__menu-main-menu-inner-pages-', array(
+              'links' => $menu, 'attributes' => array( 'class' => array('nav', 'navbar-nav', 'navbar-right'),), 
+              )); ?>
           <?php endif; ?>
         </nav>
       </div>

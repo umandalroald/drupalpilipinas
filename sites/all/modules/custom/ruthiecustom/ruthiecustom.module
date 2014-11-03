@@ -54,7 +54,7 @@ function _customslider_CONTENT() {
   foreach ($nodes as $node) {
     $image = image_style_url('940x400px_image_slider', $node->field_slider_image['und'][0]['filename']);
     $title = $node->title;
-    $body = $node->body['und'][0]['safe_value'];
+    $body = $node->field_support_text['und'][0]['safe_value'];
 
     $content .= '<div class="item"><img src="' . $image . '"><div class="wrap"><div class="inner"><h1>' . $title . '</h1><p>' . $body . '</p></div></div></div>';
   }

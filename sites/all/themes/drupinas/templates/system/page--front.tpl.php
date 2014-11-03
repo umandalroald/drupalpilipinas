@@ -73,63 +73,99 @@
  * @ingroup themeable
  */
 ?>
-<?php if ($menu = menu_navigation_links('menu-top-left-menu')) : ?>
-  <section class="top-menus">
+
+<div id="top-page"></div>
+<div class="header-top">
+  <?php if ($menu = menu_navigation_links('menu-top-left-menu')) : ?>
+    <section class="top-menus">
+      <div class="inner">
+        <div class="left">
+          <?php print theme('links__menu-top-left-menu', array(
+            'links' => $menu, 'attributes' => array( 'id' => 'menu-top-left-menu',), 
+            )); ?>
+        </div>
+        <div class="right">
+          <ul>
+            <?php if ($fb = theme_get_setting('facebook_link')) : ?>
+              <li><a target="_blank" href="<?php print $fb; ?>"><i class="fa <?php print theme_get_setting('facebook_fa_class') ;?> fa-lg"></i></a></li>
+            <?php endif; ?>
+            <?php if ($linkedin = theme_get_setting('linkedin_link')) : ?>
+              <li><a target="_blank" href="<?php print $linkedin; ?>"><i class="fa <?php print theme_get_setting('linkedin_fa_class') ;?> fa-lg"></i></a></li>
+            <?php endif; ?>
+            <?php if ($twitter = theme_get_setting('twitter_link')) : ?>
+              <li><a target="_blank" href="<?php print $twitter; ?>"><i class="fa <?php print theme_get_setting('twitter_fa_class') ;?> fa-lg"></i></a></li>
+            <?php endif; ?>
+            <?php if ($instagram = theme_get_setting('instagram_link')) : ?>
+              <li><a target="_blank" href="<?php print $instagram; ?>"><i class="fa <?php print theme_get_setting('instagram_fa_class') ;?> fa-lg"></i></a></li>
+            <?php endif; ?>
+          </ul>
+        </div>
+      </div>
+    </section>
+  <?php endif; ?>
+
+  <header class="navigation-container">
     <div class="inner">
-      <div class="left">
-        <?php print theme('links__menu-top-left-menu', array(
-          'links' => $menu, 'attributes' => array( 'id' => 'menu-top-left-menu',), 
-          )); ?>
-      </div>
-      <div class="right">
-        <ul>
-          <?php if ($fb = theme_get_setting('facebook_link')) : ?>
-            <li><a target="_blank" href="<?php print $fb; ?>"><i class="fa <?php print theme_get_setting('facebook_fa_class') ;?> fa-lg"></i></a></li>
+      <nav role="navigation" class="navbar navbar-default">
+        <div class="navbar-header">
+          <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <?php if ($logo): ?>
+            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+              <img id="site-logo" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+            </a>
           <?php endif; ?>
-          <?php if ($linkedin = theme_get_setting('linkedin_link')) : ?>
-            <li><a target="_blank" href="<?php print $linkedin; ?>"><i class="fa <?php print theme_get_setting('linkedin_fa_class') ;?> fa-lg"></i></a></li>
-          <?php endif; ?>
-          <?php if ($twitter = theme_get_setting('twitter_link')) : ?>
-            <li><a target="_blank" href="<?php print $twitter; ?>"><i class="fa <?php print theme_get_setting('twitter_fa_class') ;?> fa-lg"></i></a></li>
-          <?php endif; ?>
-          <?php if ($instagram = theme_get_setting('instagram_link')) : ?>
-            <li><a target="_blank" href="<?php print $instagram; ?>"><i class="fa <?php print theme_get_setting('instagram_fa_class') ;?> fa-lg"></i></a></li>
-          <?php endif; ?>
-        </ul>
-      </div>
+        </div>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+          <nav role="navigation">
+            <?php if (!empty($primary_nav)): ?>
+              <?php print render($primary_nav); ?>
+            <?php endif; ?>
+          </nav>
+        </div>
+      </nav>
     </div>
-  </section>
+    <a href="#top-page" class="click-to-top" alt="Go to Top"><i class="fa fa-eject fa-2x"></i></a>
+  </header>
+
+</div>
+
+
+<?php if ($page['slider']) : ?>
+  <?php print render($page['slider']); ?>
 <?php endif; ?>
 
+<div class="waypoints-container">
 
-<header class="navigation-container">
-  <div class="inner">
-    <nav role="navigation" class="navbar navbar-default">
-      <div class="navbar-header">
-        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <?php if ($logo): ?>
-          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-            <img id="site-logo" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-          </a>
-        <?php endif; ?>
-      </div>
-      <div id="navbarCollapse" class="collapse navbar-collapse">
-        <nav role="navigation">
-          <?php if (!empty($primary_nav)): ?>
-            <?php print render($primary_nav); ?>
-          <?php endif; ?>
-        </nav>
-      </div>
-    </nav>
-  </div>
-</header>
+  <section id="blog">
+    <h1>blog</h1>
+  </section>
 
-<?php print render($page['slider']); ?>
+  <section id="community">
+    <h1>community</h1>
+  </section>
+
+  <section id="events">
+    <h1>events</h1>
+  </section>
+
+  <section id="gallery">
+    <h1>gallery</h1>
+  </section>
+
+  <section id="projects">
+    <h1>projects</h1>
+  </section>
+
+  <section id="sponsors">
+    <h1>sponsors</h1>
+  </section>
+
+</div>
 
 
 <div class="content-container">
@@ -139,7 +175,6 @@
     <?php } ?>
   </div>
 </div>
-    
 
 <footer class="footer">
   <div class="inner">

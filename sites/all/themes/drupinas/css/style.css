@@ -136,30 +136,29 @@ a, p, span {
 .navigation-container-inner-pages li a {
   font-family: 'OpenSans-Regular';
   color: #888888 !important;
+  border-bottom: 3px solid #fff;
 }
-/* line 107, ../sass/style.scss */
+/* line 108, ../sass/style.scss */
 .navigation-container li a:hover,
 .navigation-container-inner-pages li a:hover {
   color: #0073ba !important;
+  border-bottom: 3px solid #50c3ff;
 }
-/* line 112, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 .navigation-container li a.active,
 .navigation-container-inner-pages li a.active {
   background-color: transparent !important;
   color: #0073ba !important;
-}
-/* line 118, ../sass/style.scss */
-.navigation-container li:last-child a,
-.navigation-container-inner-pages li:last-child a {
-  padding-right: 0px;
+  border-bottom: 3px solid #0073ba;
+  font-weight: bold;
 }
 
-/* line 124, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 .content-container {
   width: 100%;
 }
 
-/* line 128, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
 .footer {
   width: 100%;
   background: #0073ba;
@@ -168,43 +167,43 @@ a, p, span {
   padding-bottom: 0px;
   border-top: none;
 }
-/* line 136, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 .footer .left, .footer .right {
   display: inline-block;
   margin-right: -4px;
   width: 50%;
 }
-/* line 143, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 .footer .right {
   text-align: right;
 }
-/* line 145, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 .footer .right span {
   padding-right: 20px;
   border-right: 1px solid #fff;
 }
-/* line 151, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 .footer #menu-footer-menu {
   list-style: none;
   margin: 0;
   padding: 0;
   display: inline-block;
 }
-/* line 157, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .footer #menu-footer-menu li {
   display: inline-block;
   margin-right: -4px;
 }
-/* line 160, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 .footer #menu-footer-menu li:last-child {
   margin-right: 0px;
 }
-/* line 163, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .footer #menu-footer-menu li a {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 169, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 .footer a, .footer span {
   color: #fff;
   display: inline-block;
@@ -214,18 +213,18 @@ a, p, span {
   font-size: 1.125rem;
 }
 
-/* line 178, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 #drupinas_slider {
   margin-top: 106px;
   position: relative;
   height: 100%;
   background: #1e91d8;
 }
-/* line 184, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 #drupinas_slider .item img {
   width: 100%;
 }
-/* line 187, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 #drupinas_slider .item .wrap {
   position: absolute;
   top: 35%;
@@ -233,49 +232,49 @@ a, p, span {
   background: url(../images/black-opaque1.png) repeat;
   text-align: center;
 }
-/* line 194, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 #drupinas_slider .item .wrap .inner {
   padding: 15px 30px 40px 30px;
 }
-/* line 198, ../sass/style.scss */
+/* line 196, ../sass/style.scss */
 #drupinas_slider .item h1 {
   font-family: 'Myriadpro-Light';
   font-size: 90px;
   font-size: 5.625rem;
   color: #fff;
 }
-/* line 203, ../sass/style.scss */
+/* line 201, ../sass/style.scss */
 #drupinas_slider .item p {
   color: #fff;
 }
-/* line 207, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 #drupinas_slider .owl-buttons {
   position: absolute;
   width: 100%;
   top: 42%;
 }
-/* line 211, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 #drupinas_slider .owl-buttons .owl-prev, #drupinas_slider .owl-buttons .owl-next {
   display: inline-block;
   position: absolute;
   padding: 0 18px;
 }
-/* line 215, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 #drupinas_slider .owl-buttons .owl-prev i, #drupinas_slider .owl-buttons .owl-next i {
   color: #fff;
   font-size: 140px;
   font-size: 8.75rem;
 }
-/* line 220, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 #drupinas_slider .owl-buttons .owl-prev {
   left: 0px;
 }
-/* line 224, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 #drupinas_slider .owl-buttons .owl-next {
   right: 0px;
 }
 
-/* line 231, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 #blog,
 #community,
 #events,
@@ -284,7 +283,7 @@ a, p, span {
 #sponsors {
   min-height: 800px;
 }
-/* line 239, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 #blog h1, #blog h2, #blog h3,
 #community h1,
 #community h2,
@@ -305,37 +304,37 @@ a, p, span {
   margin-bottom: 0px;
 }
 
-/* line 246, ../sass/style.scss */
+/* line 244, ../sass/style.scss */
 #blog {
   background: #319075;
 }
 
-/* line 250, ../sass/style.scss */
+/* line 248, ../sass/style.scss */
 #community {
   background: #520775;
 }
 
-/* line 254, ../sass/style.scss */
+/* line 252, ../sass/style.scss */
 #events {
   background: #458075;
 }
 
-/* line 258, ../sass/style.scss */
+/* line 256, ../sass/style.scss */
 #gallery {
   background: #313595;
 }
 
-/* line 262, ../sass/style.scss */
+/* line 260, ../sass/style.scss */
 #projects {
   background: #319789;
 }
 
-/* line 266, ../sass/style.scss */
+/* line 264, ../sass/style.scss */
 #sponsors {
   background: #325875;
 }
 
-/* line 271, ../sass/style.scss */
+/* line 269, ../sass/style.scss */
 a.click-to-top {
   display: none;
   position: fixed;

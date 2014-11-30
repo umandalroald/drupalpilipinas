@@ -104,20 +104,18 @@ $theme-blue: #0073ba;
   li a {
     font-family: 'OpenSans-Regular';
     color: #888888 !important;
+    border-bottom: 3px solid #fff;
     &:hover {
       color: $theme-blue !important;
+      border-bottom: 3px solid $theme-blue + 80;
     }
   }
 
   li a.active {
     background-color: transparent !important;
     color: $theme-blue !important;
-  }
-
-  li:last-child {
-    a {
-      padding-right: 0px;
-    }
+    border-bottom: 3px solid $theme-blue;
+    font-weight: bold;
   }
 }
 

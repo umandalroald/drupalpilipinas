@@ -1,0 +1,11 @@
+name = Drupal Pilipinas Views
+description = Views on Drupal Pilipinas Website
+core = 7.x
+package = Drupal Pilipinas
+version = 7.x-1.0
+project = drupal_pilipinas_views
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = sponsors
+features_exclude[dependencies][ctools] = ctools

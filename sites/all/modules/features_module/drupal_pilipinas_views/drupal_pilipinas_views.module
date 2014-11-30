@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Drupal Pilipinas Views feature.
+ */
+
+include_once 'drupal_pilipinas_views.features.inc';

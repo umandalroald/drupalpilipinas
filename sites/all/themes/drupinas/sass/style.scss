@@ -252,7 +252,87 @@ $theme-blue: #0073ba;
 }
 
 #events {
-  background: #fff;
+  background: #f6f7f8;
+
+  .view-content {
+    text-align: center;
+  }
+  .views-row {
+    display: inline-block;
+    width: 30%;
+    background: #fff;
+    border: 1px solid #e2e2e2;
+    vertical-align: top;
+    padding-bottom: 26px;
+    min-height: 485px;
+  }
+
+  .views-row-1,
+  .views-row-2 {
+    margin-right: 30px;
+  }
+
+  .views-field.views-field-field-image {
+    margin-top: 26px;
+  }
+
+  .views-field.views-field-field-date,
+  .views-field.views-field-title,
+  .views-field.views-field-body,
+  .views-field.views-field-view-node {
+    margin-right: 28px;
+    margin-left: 28px;
+    text-align: left;
+  }
+
+  .views-field.views-field-field-date {
+    background: #f0f3f5;
+    color: #999999;
+  }
+
+  .views-field.views-field-title {
+    margin-top: 10px;
+    min-height: 40px;
+    a{
+      color: $theme-blue;
+      font-family: 'OpenSans-Bold';
+    }
+  }
+ 
+  .views-field.views-field-body {
+    margin-top: 5px;
+    font-family: 'OpenSans-Regular';
+    color: #666666;
+    @include font-size(20);
+    line-height: 25px;
+    min-height: 125px;
+  }
+
+  .views-field.views-field-view-node {
+    margin-top: 10px;
+    a {
+      color: #fff;
+      display: block;
+      background: #c11e22;
+      text-align: center;
+      padding: 10px 0;
+    } 
+  }
+
+  .view-footer {
+    text-align: center;
+    margin-top: 40px;
+    a {
+      color: #fff;
+      display: inline-block;
+      background: $theme-blue;
+      text-align: center;
+      padding: 15px 25px;
+      @include font-size(40);
+      text-decoration: none;
+    }
+  }
+
 }
 
 #gallery {

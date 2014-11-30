@@ -5,4 +5,5 @@ version = 7.x-1.0
 project = image_styles
 dependencies[] = image
 features[features_api][] = api:2
+features[image][] = 249x168_sponsors_homepage
 features[image][] = 940x400px_image_slider

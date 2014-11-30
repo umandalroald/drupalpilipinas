@@ -1,0 +1,7 @@
+name = Homepage Slider
+core = 7.x
+package = Drupal Pilipinas
+version = 7.x-1.0
+project = homepage_slider
+dependencies[] = ruthiecustom
+features[features_api][] = api:2

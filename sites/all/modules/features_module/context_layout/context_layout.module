@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Context Layout feature.
+ */
+
+include_once 'context_layout.features.inc';

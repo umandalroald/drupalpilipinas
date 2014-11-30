@@ -232,6 +232,8 @@ $theme-blue: #0073ba;
 #gallery,
 #projects,
 #sponsors {
+  padding-top: 110px;
+  margin-bottom: 50px;
   min-height: 800px;
 
   h1, h2, h3 {
@@ -262,7 +264,33 @@ $theme-blue: #0073ba;
 }
 
 #sponsors {
-  background: #325875;
+  background: #fff;
+  .view-content{
+    text-align: center;
+  }
+  .views-row {
+    display: inline-block;
+    width: 33%;
+    margin-bottom: 30px;
+  }
+}
+
+.sec-head {
+  border-bottom: 1px solid #d3d3d3;
+  margin-bottom: 35px;
+  h2 {
+    font-family: 'OpenSans-Bold';
+    border-bottom: 2px solid #c11e22;
+    display: inline-block;
+    margin-bottom: -2px !important;
+    color: #0073ba;
+    @include font-size(37);
+    padding-bottom: 8px;
+    span{
+      font-family: 'OpenSans-Regular';
+      color: #666666;
+    }
+  }
 }
 
 

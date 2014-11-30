@@ -1,6 +1,6 @@
 name = Homepage Scroll
 core = 7.x
-package = Features
+package = Drupal Pilipinas
 dependencies[] = features
 dependencies[] = menu
 dependencies[] = scroll_to_destination_anchors

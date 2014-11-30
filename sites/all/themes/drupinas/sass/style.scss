@@ -274,14 +274,33 @@ $theme-blue: #0073ba;
 
   .views-field.views-field-field-image {
     margin-top: 26px;
+    overflow: hidden;
+    img {
+      -webkit-transition: all 1s ease; /* Safari and Chrome */
+      -moz-transition: all 1s ease; /* Firefox */
+      -o-transition: all 1s ease; /* IE 9 */
+      -ms-transition: all 1s ease; /* Opera */
+      transition: all 1s ease;
+    }
+      
+  }
+
+  .views-row:hover .views-field-field-image img {
+    -webkit-transform:scale(1.10); /* Safari and Chrome */
+    -moz-transform:scale(1.10); /* Firefox */
+    -ms-transform:scale(1.10); /* IE 9 */
+    -o-transform:scale(1.10); /* Opera */
+     transform:scale(1.10);
+    -webkit-backface-visibility: hidden;
   }
 
   .views-field.views-field-field-date,
   .views-field.views-field-title,
   .views-field.views-field-body,
-  .views-field.views-field-view-node {
-    margin-right: 28px;
-    margin-left: 28px;
+  .views-field.views-field-view-node,
+  .views-field.views-field-field-image {
+    margin-right: 29px;
+    margin-left: 29px;
     text-align: left;
   }
 

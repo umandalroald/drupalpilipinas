@@ -154,9 +154,11 @@
   </section>
 
   <section id="events">
-    <?php if ($page['events']) : ?>
-      <?php print render($page['events']); ?>
-    <?php endif; ?>
+    <div class="inner">
+      <?php if ($page['events']) : ?>
+        <?php print render($page['events']); ?>
+      <?php endif; ?>
+    </div>
   </section>
 
   <section id="gallery">

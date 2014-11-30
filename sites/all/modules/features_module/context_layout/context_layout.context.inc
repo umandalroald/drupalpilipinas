@@ -26,6 +26,12 @@ function context_layout_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-events-block' => array(
+          'module' => 'views',
+          'delta' => 'events-block',
+          'region' => 'events',
+          'weight' => '-10',
+        ),
         'views-sponsors-block' => array(
           'module' => 'views',
           'delta' => 'sponsors-block',

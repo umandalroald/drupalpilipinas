@@ -48,4 +48,33 @@
     display: none;
   }
 }
+
+#events {
+
+  .view-content {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .views-row {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 26px;
+    min-height: 100px;
+  }
+
+  .views-field.views-field-body {
+    min-height: 40px;
+  }
+
+  .views-field.views-field-image {
+    .field-content {
+      text-align: center;
+    }
+  }
+
+}
+
+
 }

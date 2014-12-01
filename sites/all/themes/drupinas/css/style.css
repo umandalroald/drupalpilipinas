@@ -500,26 +500,45 @@ a.click-to-top {
   #drupinas_slider .owl-buttons {
     top: 45%;
   }
+
+  /* line 18, ../sass/breakpoints/_1000px.scss */
+  .sec-head {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
 }
 @media (max-width: 1000px) {
-  /* line 26, ../sass/breakpoints/_1000px.scss */
+  /* line 32, ../sass/breakpoints/_1000px.scss */
   .inner {
     width: 100%;
   }
 
-  /* line 30, ../sass/breakpoints/_1000px.scss */
+  /* line 36, ../sass/breakpoints/_1000px.scss */
   .top-menus {
     padding: 0px 10px;
   }
 
-  /* line 34, ../sass/breakpoints/_1000px.scss */
+  /* line 40, ../sass/breakpoints/_1000px.scss */
   .navigation-container {
     padding: 10px 10px;
   }
 
-  /* line 42, ../sass/breakpoints/_1000px.scss */
+  /* line 48, ../sass/breakpoints/_1000px.scss */
   .footer {
     padding: 0px 10px;
+  }
+}
+@media (max-width: 840px) {
+  /* line 4, ../sass/breakpoints/_800px.scss */
+  #events .views-row-1,
+  #events .views-row-2 {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 815px) {
+  /* line 21, ../sass/breakpoints/_800px.scss */
+  #sponsors .views-row {
+    width: 49%;
   }
 }
 @media (max-width: 770px) {
@@ -549,9 +568,19 @@ a.click-to-top {
   #drupinas_slider {
     margin-top: 94px;
   }
+
+  /* line 25, ../sass/breakpoints/_700px.scss */
+  #blog,
+  #community,
+  #events,
+  #gallery,
+  #projects,
+  #sponsors {
+    padding-top: 85px;
+  }
 }
 @media (max-width: 730px) {
-  /* line 33, ../sass/breakpoints/_700px.scss */
+  /* line 41, ../sass/breakpoints/_700px.scss */
   #drupinas_slider .item .wrap {
     position: relative;
     display: block;
@@ -559,7 +588,7 @@ a.click-to-top {
     width: 100%;
     background: #1e91d8;
   }
-  /* line 42, ../sass/breakpoints/_700px.scss */
+  /* line 50, ../sass/breakpoints/_700px.scss */
   #drupinas_slider .owl-buttons .owl-prev, #drupinas_slider .owl-buttons .owl-next {
     background: url(../images/black-opaque1.png) repeat;
   }
@@ -602,5 +631,33 @@ a.click-to-top {
   /* line 47, ../sass/breakpoints/_600px.scss */
   #drupinas_slider .owl-buttons {
     display: none;
+  }
+
+  /* line 54, ../sass/breakpoints/_600px.scss */
+  #events .view-content {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  /* line 59, ../sass/breakpoints/_600px.scss */
+  #events .views-row {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 26px;
+    min-height: 100px;
+  }
+  /* line 67, ../sass/breakpoints/_600px.scss */
+  #events .views-field.views-field-body {
+    min-height: 40px;
+  }
+  /* line 72, ../sass/breakpoints/_600px.scss */
+  #events .views-field.views-field-image .field-content {
+    text-align: center;
+  }
+}
+@media (max-width: 520px) {
+  /* line 7, ../sass/breakpoints/_500px.scss */
+  #sponsors .views-row {
+    width: 100%;
   }
 }

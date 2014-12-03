@@ -142,27 +142,43 @@
 <div class="waypoints-container">
 
   <section id="blog">
-    <h1>blog</h1>
+    <?php if ($page['blog']) : ?>
+      <?php print render($page['blog']); ?>
+    <?php endif; ?>
   </section>
 
   <section id="community">
-    <h1>community</h1>
+    <?php if ($page['community']) : ?>
+      <?php print render($page['community']); ?>
+    <?php endif; ?>
   </section>
 
   <section id="events">
-    <h1>events</h1>
+    <div class="inner">
+      <?php if ($page['events']) : ?>
+        <?php print render($page['events']); ?>
+      <?php endif; ?>
+    </div>
   </section>
 
   <section id="gallery">
-    <h1>gallery</h1>
+    <?php if ($page['gallery']) : ?>
+      <?php print render($page['gallery']); ?>
+    <?php endif; ?>
   </section>
 
   <section id="projects">
-    <h1>projects</h1>
+    <?php if ($page['projects']) : ?>
+      <?php print render($page['projects']); ?>
+    <?php endif; ?>
   </section>
 
   <section id="sponsors">
-    <h1>sponsors</h1>
+    <div class="inner">
+      <?php if ($page['sponsors']) : ?>
+        <?php print render($page['sponsors']); ?>
+      <?php endif; ?>
+    </div>
   </section>
 
 </div>

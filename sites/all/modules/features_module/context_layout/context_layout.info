@@ -1,0 +1,12 @@
+name = Context Layout
+core = 7.x
+package = Drupal Pilipinas
+version = 7.x-1.0
+project = context_layout
+dependencies[] = context
+dependencies[] = ctools
+dependencies[] = views
+features[context][] = home_blocks
+features[context][] = home_page
+features[ctools][] = context:context:3
+features[features_api][] = api:2

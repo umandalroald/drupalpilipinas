@@ -37,7 +37,16 @@ function context_layout_context_default_contexts() {
   $context->name = 'events_node_page';
   $context->description = '';
   $context->tag = 'Locations';
-  $context->conditions = array();
+  $context->conditions = array(
+    'node' => array(
+      'values' => array(
+        'events' => 'events',
+      ),
+      'options' => array(
+        'node_form' => '1',
+      ),
+    ),
+  );
   $context->reactions = array();
   $context->condition_mode = 0;
 

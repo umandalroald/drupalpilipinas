@@ -3,6 +3,7 @@ core = 7.x
 package = Drupal Pilipinas
 version = 7.x-1.0
 project = context_layout
+dependencies[] = content_types
 dependencies[] = context
 dependencies[] = ctools
 dependencies[] = ruthiecustom

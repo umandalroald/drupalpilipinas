@@ -5,6 +5,7 @@ version = 7.x-1.0
 project = context_layout
 dependencies[] = context
 dependencies[] = ctools
+dependencies[] = ruthiecustom
 dependencies[] = views
 features[context][] = events_node_blocks
 features[context][] = events_node_page

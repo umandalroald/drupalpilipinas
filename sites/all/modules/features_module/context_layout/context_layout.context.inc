@@ -62,6 +62,12 @@ function context_layout_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'ruthiecustom-sliderblock' => array(
+          'module' => 'ruthiecustom',
+          'delta' => 'sliderblock',
+          'region' => 'slider',
+          'weight' => '-10',
+        ),
         'views-events-block' => array(
           'module' => 'views',
           'delta' => 'events-block',

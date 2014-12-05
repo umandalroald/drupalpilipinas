@@ -77,6 +77,12 @@ function context_layout_context_default_contexts() {
           'region' => 'slider',
           'weight' => '-10',
         ),
+        'views-featured_blog-block' => array(
+          'module' => 'views',
+          'delta' => 'featured_blog-block',
+          'region' => 'blog',
+          'weight' => '-10',
+        ),
         'views-events-block' => array(
           'module' => 'views',
           'delta' => 'events-block',

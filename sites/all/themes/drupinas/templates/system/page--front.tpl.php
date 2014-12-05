@@ -142,9 +142,11 @@
 <div class="waypoints-container">
 
   <section id="blog">
-    <?php if ($page['blog']) : ?>
-      <?php print render($page['blog']); ?>
-    <?php endif; ?>
+    <div class="inner">
+      <?php if ($page['blog']) : ?>
+        <?php print render($page['blog']); ?>
+      <?php endif; ?>
+    </div>
   </section>
 
   <section id="community">

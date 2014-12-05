@@ -13,6 +13,42 @@ function context_layout_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'events_node_blocks';
+  $context->description = '';
+  $context->tag = 'Blocks';
+  $context->conditions = array(
+    'context' => array(
+      'values' => array(
+        'events_node_page' => 'events_node_page',
+      ),
+    ),
+  );
+  $context->reactions = array();
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Blocks');
+  $export['events_node_blocks'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'events_node_page';
+  $context->description = '';
+  $context->tag = 'Locations';
+  $context->conditions = array();
+  $context->reactions = array();
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Locations');
+  $export['events_node_page'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'home_blocks';
   $context->description = 'Blocks on Homepage';
   $context->tag = 'Blocks';

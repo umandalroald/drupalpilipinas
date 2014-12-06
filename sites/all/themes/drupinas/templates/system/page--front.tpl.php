@@ -149,10 +149,12 @@
     </div>
   </section>
 
-  <section id="community">
-    <?php if ($page['community']) : ?>
-      <?php print render($page['community']); ?>
-    <?php endif; ?>
+  <section id="projects">
+    <div class="inner">
+      <?php if ($page['projects']) : ?>
+        <?php print render($page['projects']); ?>
+      <?php endif; ?>
+    </div>
   </section>
 
   <section id="events">
@@ -169,9 +171,9 @@
     <?php endif; ?>
   </section>
 
-  <section id="projects">
-    <?php if ($page['projects']) : ?>
-      <?php print render($page['projects']); ?>
+  <section id="community">
+    <?php if ($page['community']) : ?>
+      <?php print render($page['community']); ?>
     <?php endif; ?>
   </section>
 

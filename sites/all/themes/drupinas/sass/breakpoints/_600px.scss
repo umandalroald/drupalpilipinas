@@ -22,6 +22,30 @@
 }
 
 
+#projects {
+
+  .views-field.views-field-field-image,
+  .views-field.views-field-nothing {
+    display: block;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  .views-field.views-field-field-image {
+    text-align: center;
+  }
+
+  .views-row-even {
+    .views-field.views-field-field-image {
+      .field-content {
+        text-align: center;
+      }
+    }
+  }
+
+}
+
+
 
 }
 

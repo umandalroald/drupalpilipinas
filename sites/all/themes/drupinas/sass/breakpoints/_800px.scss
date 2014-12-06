@@ -1,3 +1,44 @@
+@media (max-width:890px) {
+
+
+#projects {
+
+  .views-field.views-field-field-image,
+  .views-field.views-field-nothing {
+    margin-bottom: 30px;
+  }
+
+  .views-field.views-field-field-image{
+    overflow: hidden;
+  }
+   
+  .views-row-odd {
+    .views-field.views-field-field-image {
+
+    }
+
+    .views-field.views-field-nothing {
+      padding-left: 10px;
+    }
+  } 
+
+  .views-row-even {
+    .views-field.views-field-field-image {
+
+    }
+
+    .views-field.views-field-nothing {
+      padding-right: 10px;
+    }
+  } 
+}
+
+
+
+
+}
+
+
 @media (max-width:840px) {
 
 #events, #blog {

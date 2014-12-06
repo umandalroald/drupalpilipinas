@@ -379,7 +379,82 @@ $theme-blue: #0073ba;
 }
 
 #projects {
-  background: #319789;
+
+  .view-content {
+    padding: 0 25px;
+  }
+
+  .views-row {
+    position: relative;
+    clear: both;
+
+  }
+
+  .views-field.views-field-field-image,
+  .views-field.views-field-nothing {
+    display: inline-block;
+    margin-right: -4px;
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .views-row:last-child {
+    .views-field.views-field-field-image,
+    .views-field.views-field-nothing {
+      margin-bottom: 0px;
+    }
+  }
+
+  .views-row-odd {
+    .views-field.views-field-field-image {
+      float: left;
+    }
+
+    .views-field.views-field-nothing {
+      float: right;
+    }
+  }
+
+  .views-row-even {
+    .views-field.views-field-field-image {
+      float: right;
+      .field-content {
+        text-align: right;
+      }
+    }
+
+    .views-field.views-field-nothing {
+      float: left;
+
+    }
+  }
+
+  .views-field.views-field-nothing {
+    .title a {
+      text-transform: uppercase;
+      color: $theme-blue;
+      font-weight: 900;
+      @include font-size(28);
+    }
+    p {
+      @include font-size(20);
+      line-height: 25px;
+      color: #666;
+      margin-top: 15px;
+      text-align: justify;
+    }
+    a {
+      color: #c11e22;
+      font-weight: 800;
+    }
+  }
+
+  .views-field.views-field-field-image {
+
+  }
+
+    
 }
 
 #sponsors {
@@ -430,3 +505,4 @@ a.click-to-top {
 @import 'breakpoints/700px';
 @import 'breakpoints/600px';
 @import 'breakpoints/500px';
+@import 'breakpoints/400px';

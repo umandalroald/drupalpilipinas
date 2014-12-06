@@ -34,6 +34,45 @@
 }
 
 
+.faded {
+
+  padding: 10px 0;
+  width: 100%;
+  border-bottom: 1px solid $theme-blue;
+  background: #fefefe;
+
+  .navbar-header a img{
+    border-radius: 0px;
+    background-color: rgba(255, 255, 255, 0.0);
+    padding: 0px 0px 0px 10px;
+  }
+
+  .navbar {
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 0px solid transparent;
+  }
+  .navbar-default {
+    background-color: transparent;
+  }
+
+  li a {
+    font-family: 'OpenSans-Regular';
+    color: #888888 !important;
+    border-bottom: 3px solid transparent;
+    &:hover {
+      color: $theme-blue !important;
+      border-bottom: 3px solid $theme-blue + 80;
+    }
+  }
+
+  li a.active {
+    background-color: transparent !important;
+    color: $theme-blue !important;
+    border-bottom: 3px solid $theme-blue;
+    font-weight: bold;
+  }
+}
 
 
 }

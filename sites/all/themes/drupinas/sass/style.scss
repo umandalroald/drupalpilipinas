@@ -105,7 +105,7 @@ $theme-blue: #0073ba;
   li a {
     font-family: 'OpenSans-Regular';
     color: #888888 !important;
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid transparent;
     &:hover {
       color: $theme-blue !important;
       border-bottom: 3px solid $theme-blue + 80;
@@ -117,6 +117,37 @@ $theme-blue: #0073ba;
     color: $theme-blue !important;
     border-bottom: 3px solid $theme-blue;
     font-weight: bold;
+  }
+}
+
+
+.faded {
+  padding: 10px 0;
+  width: 100%;
+  border-bottom: 1px solid transparent;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .navbar-header a img{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 2px 5px 5px;
+  }
+  
+  li a {
+    font-family: 'OpenSans-Regular';
+    color: #fff !important;
+    border-bottom: 3px solid transparent;
+    &:hover {
+      color: #fff !important;
+      border-bottom: 3px solid #fff + 80;
+    }
+  }
+
+  li a.active {
+    background-color: transparent !important;
+    color: #fff !important;
+    border-bottom: 3px solid #fff;
+    font-weight: normal;
   }
 }
 
@@ -497,7 +528,6 @@ a.click-to-top {
   background: url(../images/black-opaque1.png) repeat;
   padding: 10px;
 }
-
 
 ::-webkit-scrollbar              {
   width: 12px;

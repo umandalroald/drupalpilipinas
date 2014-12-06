@@ -20,8 +20,10 @@
     $('html, body').waypoint(function(direction) {
       if (direction == 'down') {
         $('.top-menus').slideUp();
+        $('header.navigation-container').addClass('faded');
       }else{
         $('.top-menus').slideDown();
+        $('header.navigation-container').removeClass('faded');
       }
     }, { offset: '-30%' });
 

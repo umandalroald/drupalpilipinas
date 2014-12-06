@@ -30,7 +30,7 @@ function homepage_scroll_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -50,
     'customized' => 1,
   );
   // Exported menu link: main-menu_community:<void2>
@@ -53,7 +53,7 @@ function homepage_scroll_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -46,
     'customized' => 1,
   );
   // Exported menu link: main-menu_events:<void3>
@@ -76,7 +76,7 @@ function homepage_scroll_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -48,
     'customized' => 1,
   );
   // Exported menu link: main-menu_gallery:<void4>
@@ -99,7 +99,7 @@ function homepage_scroll_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -47,
     'customized' => 1,
   );
   // Exported menu link: main-menu_projects:<void5>
@@ -122,7 +122,7 @@ function homepage_scroll_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -49,
     'customized' => 1,
   );
   // Exported menu link: main-menu_sponsors:<void6>
@@ -145,7 +145,7 @@ function homepage_scroll_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -45,
     'customized' => 1,
   );
   // Exported menu link: menu-main-menu-inner-pages-_blog:<front>

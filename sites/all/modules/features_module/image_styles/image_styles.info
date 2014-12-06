@@ -7,4 +7,5 @@ dependencies[] = image
 features[features_api][] = api:2
 features[image][] = 234x181_events_homepage
 features[image][] = 249x168_sponsors_homepage
+features[image][] = 394x197_projects_homepage
 features[image][] = 940x400px_image_slider

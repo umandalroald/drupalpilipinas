@@ -89,6 +89,12 @@ function context_layout_context_default_contexts() {
           'region' => 'events',
           'weight' => '-10',
         ),
+        'views-community_projects-block' => array(
+          'module' => 'views',
+          'delta' => 'community_projects-block',
+          'region' => 'projects',
+          'weight' => '-10',
+        ),
         'views-sponsors-block' => array(
           'module' => 'views',
           'delta' => 'sponsors-block',

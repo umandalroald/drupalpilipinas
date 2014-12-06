@@ -581,6 +581,43 @@ a.click-to-top {
   padding: 10px;
 }
 
+/* line 502, ../sass/style.scss */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* line 505, ../sass/style.scss */
+::-webkit-scrollbar-button {
+  background: #0069b0;
+  width: 12px;
+}
+
+/* line 509, ../sass/style.scss */
+::-webkit-scrollbar-track {
+  width: 12px;
+}
+
+/* line 512, ../sass/style.scss */
+::-webkit-scrollbar-track-piece {
+  width: 12px;
+}
+
+/* line 515, ../sass/style.scss */
+::-webkit-scrollbar-thumb {
+  width: 12px;
+  background: #0073ba;
+}
+
+/* line 519, ../sass/style.scss */
+::-webkit-scrollbar-corner {
+  width: 12px;
+}
+
+/* line 522, ../sass/style.scss */
+::-webkit-resizer {
+  width: 12px;
+}
+
 @media (max-width: 1080px) {
   /* line 6, ../sass/breakpoints/_1000px.scss */
   #drupinas_slider .item .wrap .inner {

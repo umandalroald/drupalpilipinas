@@ -499,6 +499,30 @@ a.click-to-top {
 }
 
 
+::-webkit-scrollbar              {
+  width: 12px;
+}
+::-webkit-scrollbar-button       { 
+  background: $theme-blue - 10;
+  width: 12px;
+}
+::-webkit-scrollbar-track        {
+  width: 12px;
+}
+::-webkit-scrollbar-track-piece  {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb        {
+  width: 12px;
+  background: $theme-blue;
+}
+::-webkit-scrollbar-corner       {
+  width: 12px;
+}
+::-webkit-resizer                {
+  width: 12px;
+}
+
 
 @import 'breakpoints/1000px';
 @import 'breakpoints/800px';

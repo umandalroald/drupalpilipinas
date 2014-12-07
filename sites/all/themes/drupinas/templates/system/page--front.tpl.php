@@ -165,15 +165,17 @@
     </div>
   </section>
 
+  <section id="community">
+    <div class="inner">
+      <?php if ($page['community']) : ?>
+        <?php print render($page['community']); ?>
+      <?php endif; ?>
+    </div>
+  </section>
+
   <section id="gallery">
     <?php if ($page['gallery']) : ?>
       <?php print render($page['gallery']); ?>
-    <?php endif; ?>
-  </section>
-
-  <section id="community">
-    <?php if ($page['community']) : ?>
-      <?php print render($page['community']); ?>
     <?php endif; ?>
   </section>
 

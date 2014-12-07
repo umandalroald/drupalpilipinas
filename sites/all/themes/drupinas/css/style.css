@@ -680,39 +680,71 @@ a.click-to-top {
   padding: 10px;
 }
 
-/* line 593, ../sass/style.scss */
+/* FOR CONTENT TYPE PAGES */
+/* line 596, ../sass/style.scss */
+.big-bg-image {
+  position: relative;
+  width: 100%;
+}
+/* line 599, ../sass/style.scss */
+.big-bg-image img {
+  width: 100%;
+  height: auto;
+}
+/* line 603, ../sass/style.scss */
+.big-bg-image .title-wrap {
+  width: 100%;
+  margin: 0 auto;
+  bottom: 20px;
+  position: absolute;
+}
+/* line 608, ../sass/style.scss */
+.big-bg-image .title-wrap h2 {
+  width: 1030px;
+  margin: 0 auto;
+  font-family: 'OpenSans-Regular';
+  color: #fff;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 90px;
+  font-size: 5.625rem;
+  line-height: 55px;
+  padding: 20px 30px;
+}
+
+/* line 623, ../sass/style.scss */
 ::-webkit-scrollbar {
   width: 12px;
 }
 
-/* line 596, ../sass/style.scss */
+/* line 626, ../sass/style.scss */
 ::-webkit-scrollbar-button {
   background: #0069b0;
   width: 12px;
 }
 
-/* line 600, ../sass/style.scss */
+/* line 630, ../sass/style.scss */
 ::-webkit-scrollbar-track {
   width: 12px;
 }
 
-/* line 603, ../sass/style.scss */
+/* line 633, ../sass/style.scss */
 ::-webkit-scrollbar-track-piece {
   width: 12px;
 }
 
-/* line 606, ../sass/style.scss */
+/* line 636, ../sass/style.scss */
 ::-webkit-scrollbar-thumb {
   width: 12px;
   background: #0073ba;
 }
 
-/* line 610, ../sass/style.scss */
+/* line 640, ../sass/style.scss */
 ::-webkit-scrollbar-corner {
   width: 12px;
 }
 
-/* line 613, ../sass/style.scss */
+/* line 643, ../sass/style.scss */
 ::-webkit-resizer {
   width: 12px;
 }
@@ -733,23 +765,43 @@ a.click-to-top {
     margin-left: 15px;
   }
 }
+@media (max-width: 1030px) {
+  /* line 31, ../sass/breakpoints/_1000px.scss */
+  .big-bg-image .title-wrap h2 {
+    width: 100%;
+  }
+
+  /* line 39, ../sass/breakpoints/_1000px.scss */
+  .node-type-blog .row,
+  .node-type-events .row {
+    width: 100%;
+  }
+  /* line 43, ../sass/breakpoints/_1000px.scss */
+  .node-type-blog .node-blog,
+  .node-type-blog .node-events,
+  .node-type-events .node-blog,
+  .node-type-events .node-events {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 @media (max-width: 1000px) {
-  /* line 32, ../sass/breakpoints/_1000px.scss */
+  /* line 59, ../sass/breakpoints/_1000px.scss */
   .inner {
     width: 100%;
   }
 
-  /* line 36, ../sass/breakpoints/_1000px.scss */
+  /* line 63, ../sass/breakpoints/_1000px.scss */
   .top-menus {
     padding: 0px 10px;
   }
 
-  /* line 40, ../sass/breakpoints/_1000px.scss */
+  /* line 67, ../sass/breakpoints/_1000px.scss */
   .navigation-container {
     padding: 10px 10px;
   }
 
-  /* line 48, ../sass/breakpoints/_1000px.scss */
+  /* line 75, ../sass/breakpoints/_1000px.scss */
   .footer {
     padding: 0px 10px;
   }
@@ -829,35 +881,42 @@ a.click-to-top {
     width: 49%;
   }
 }
+@media (max-width: 780px) {
+  /* line 4, ../sass/breakpoints/_700px.scss */
+  .big-bg-image .title-wrap {
+    bottom: 20px;
+    position: relative;
+  }
+}
 @media (max-width: 770px) {
-  /* line 3, ../sass/breakpoints/_700px.scss */
+  /* line 15, ../sass/breakpoints/_700px.scss */
   #site-logo {
     width: 165px;
   }
 
-  /* line 7, ../sass/breakpoints/_700px.scss */
+  /* line 19, ../sass/breakpoints/_700px.scss */
   .navbar-toggle {
     margin-top: 0px;
     margin-right: 15px;
     margin-bottom: 0px;
   }
 
-  /* line 13, ../sass/breakpoints/_700px.scss */
+  /* line 25, ../sass/breakpoints/_700px.scss */
   .navigation-container .navbar {
     min-height: 0px;
   }
 
-  /* line 17, ../sass/breakpoints/_700px.scss */
+  /* line 29, ../sass/breakpoints/_700px.scss */
   .navbar-collapse {
     margin-top: 10px;
   }
 
-  /* line 21, ../sass/breakpoints/_700px.scss */
+  /* line 33, ../sass/breakpoints/_700px.scss */
   #drupinas_slider {
     margin-top: 94px;
   }
 
-  /* line 25, ../sass/breakpoints/_700px.scss */
+  /* line 37, ../sass/breakpoints/_700px.scss */
   #blog,
   #community,
   #events,
@@ -868,7 +927,7 @@ a.click-to-top {
   }
 }
 @media (max-width: 730px) {
-  /* line 41, ../sass/breakpoints/_700px.scss */
+  /* line 53, ../sass/breakpoints/_700px.scss */
   #drupinas_slider .item .wrap {
     position: relative;
     display: block;
@@ -876,7 +935,7 @@ a.click-to-top {
     width: 100%;
     background: #1e91d8;
   }
-  /* line 50, ../sass/breakpoints/_700px.scss */
+  /* line 62, ../sass/breakpoints/_700px.scss */
   #drupinas_slider .owl-buttons .owl-prev, #drupinas_slider .owl-buttons .owl-next {
     background: url(../images/black-opaque1.png) repeat;
   }
@@ -965,18 +1024,29 @@ a.click-to-top {
     text-align: center;
   }
 }
+@media (max-width: 570px) {
+  /* line 5, ../sass/breakpoints/_500px.scss */
+  .big-bg-image .title-wrap h2 {
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 50px;
+    font-size: 3.125rem;
+    line-height: 30px;
+    padding: 10px 15px;
+  }
+}
 @media (max-width: 560px) {
-  /* line 4, ../sass/breakpoints/_500px.scss */
+  /* line 20, ../sass/breakpoints/_500px.scss */
   #community .views-row {
     width: 50%;
   }
-  /* line 9, ../sass/breakpoints/_500px.scss */
+  /* line 25, ../sass/breakpoints/_500px.scss */
   #community .second-text p {
     width: 90%;
   }
 }
 @media (max-width: 520px) {
-  /* line 24, ../sass/breakpoints/_500px.scss */
+  /* line 40, ../sass/breakpoints/_500px.scss */
   #sponsors .views-row {
     width: 100%;
   }

@@ -12,6 +12,7 @@ regions[header]         = 'Header'
 regions[help]           = 'Help'
 regions[content]        = 'Content'
 regions[sidebar_first]  = 'Sidebar First'
+regions[sidebar_second] = 'Sidebar Second'
 regions[footer]         = 'Footer'
 
 

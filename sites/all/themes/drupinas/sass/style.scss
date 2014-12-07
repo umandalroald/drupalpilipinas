@@ -590,6 +590,36 @@ a.click-to-top {
   padding: 10px;
 }
 
+
+/* FOR CONTENT TYPE PAGES */
+
+.big-bg-image {
+  position: relative;
+  width: 100%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .title-wrap {
+    width: 100%;
+    margin: 0 auto;
+    bottom: 20px;
+    position: absolute;
+    h2 {
+      width: $base-width + 50px;
+      margin: 0 auto;
+      font-family: 'OpenSans-Regular';
+      color: #fff;
+      font-weight: 500;
+      background-color: rgba(0, 0, 0, 0.5);
+      @include font-size(90);
+      line-height: 55px;
+      padding: 20px 30px;
+    }
+  }
+}
+
+
 ::-webkit-scrollbar              {
   width: 12px;
 }
@@ -621,3 +651,5 @@ a.click-to-top {
 @import 'breakpoints/600px';
 @import 'breakpoints/500px';
 @import 'breakpoints/400px';
+
+

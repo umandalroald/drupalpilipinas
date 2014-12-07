@@ -101,7 +101,6 @@
   </section>
 <?php endif; ?>
 
-
 <header class="navigation-container-inner-pages">
   <div class="inner">
     <nav role="navigation" class="navbar navbar-default">
@@ -131,6 +130,18 @@
   </div>
 </header>
 
+<div class="big-bg-image">
+  <?php if (!empty($bg_big_bgimage)): ?>
+    <img src="<?php print $bg_big_bgimage; ?>">
+  <?php endif; ?>
+  <img src="">
+  <div class="title-wrap">
+    <?php if (!empty($title)): ?>
+      <h2><?php print $title; ?></h2>
+    <?php endif; ?>
+  </div>
+</div>
+
 <div class="content-container">
   <div class="inner">
 
@@ -151,9 +162,6 @@
         <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
         <a id="main-content"></a>
         <?php print render($title_prefix); ?>
-        <?php if (!empty($title)): ?>
-          <h1 class="page-header"><?php print $title; ?></h1>
-        <?php endif; ?>
         <?php print render($title_suffix); ?>
         <?php print $messages; ?>
         <?php if (!empty($tabs)): ?>

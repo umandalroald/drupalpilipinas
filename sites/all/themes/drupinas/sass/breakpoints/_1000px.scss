@@ -24,7 +24,34 @@
 }
 
 
+@media (max-width:1030px) {
 
+.big-bg-image {
+  .title-wrap {
+    h2 {
+      width: 100%;
+    }
+  }
+}
+
+.node-type-blog,
+.node-type-events {
+  .row {
+    width: 100%;
+  }
+
+  .node-blog,
+  .node-events {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+}
+
+@media (max-width:1010px) {
+
+}
 
 
 @media (max-width:1000px) {

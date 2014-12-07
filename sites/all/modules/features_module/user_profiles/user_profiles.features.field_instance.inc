@@ -28,7 +28,7 @@ function user_profiles_field_default_field_instances() {
     'entity_type' => 'profile2',
     'field_name' => 'field_first_name',
     'label' => 'First Name',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -67,7 +67,7 @@ function user_profiles_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
-      'default_image' => 0,
+      'default_image' => 200,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -106,7 +106,7 @@ function user_profiles_field_default_field_instances() {
     'entity_type' => 'profile2',
     'field_name' => 'field_last_name',
     'label' => 'Last Name',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,

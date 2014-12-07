@@ -53,7 +53,7 @@ function homepage_scroll_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -47,
     'customized' => 1,
   );
   // Exported menu link: main-menu_events:<void3>
@@ -99,7 +99,7 @@ function homepage_scroll_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -46,
     'customized' => 1,
   );
   // Exported menu link: main-menu_projects:<void5>

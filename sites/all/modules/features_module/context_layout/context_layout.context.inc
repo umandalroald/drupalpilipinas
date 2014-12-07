@@ -83,6 +83,12 @@ function context_layout_context_default_contexts() {
           'region' => 'blog',
           'weight' => '-10',
         ),
+        'views-user_profiles-block' => array(
+          'module' => 'views',
+          'delta' => 'user_profiles-block',
+          'region' => 'community',
+          'weight' => '-10',
+        ),
         'views-events-block' => array(
           'module' => 'views',
           'delta' => 'events-block',

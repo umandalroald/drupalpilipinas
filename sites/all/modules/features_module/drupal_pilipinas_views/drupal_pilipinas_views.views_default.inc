@@ -39,7 +39,7 @@ function drupal_pilipinas_views_views_default_views() {
 <h2>Community <span>Projects</span></h2>
 </div>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
-  /* Field: Content: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -145,7 +145,7 @@ function drupal_pilipinas_views_views_default_views() {
   $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
-  /* Field: Content: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -246,7 +246,7 @@ function drupal_pilipinas_views_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -291,7 +291,7 @@ function drupal_pilipinas_views_views_default_views() {
 </div>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -303,6 +303,81 @@ function drupal_pilipinas_views_views_default_views() {
     'image_link' => '',
   );
   $export['sponsors'] = $view;
+
+  $view = new view();
+  $view->name = 'user_profiles';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'profile';
+  $view->human_name = 'User Profiles';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '7';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = '<div class="sec-head">
+<h2>Drupal <span>Community</span></h2>
+</div>';
+  $handler->display->display_options['header']['area']['format'] = 'full_html';
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area_1']['id'] = 'area_1';
+  $handler->display->display_options['header']['area_1']['table'] = 'views';
+  $handler->display->display_options['header']['area_1']['field'] = 'area';
+  $handler->display->display_options['header']['area_1']['content'] = '<div class="second-text">
+<h2>Meet our new AWESOME members!</h2>
+<p>Drupal Pilipinas is a community of passionate individuals who strongly believe in the active participation of diverse Filipino Community and support in an open-source content managing platform powering millions of websites around the world - <strong>Drupal</strong></p>
+</div>';
+  $handler->display->display_options['header']['area_1']['format'] = 'full_html';
+  /* Field: Field: Image */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'image_style' => '120x120_user_thumbnail_homepage',
+    'image_link' => 'content',
+  );
+  /* Field: Profile: First Name */
+  $handler->display->display_options['fields']['field_first_name']['id'] = 'field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['table'] = 'field_data_field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['field'] = 'field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['label'] = '';
+  $handler->display->display_options['fields']['field_first_name']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_first_name']['element_label_colon'] = FALSE;
+  /* Field: Profile: Last Name */
+  $handler->display->display_options['fields']['field_last_name']['id'] = 'field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['table'] = 'field_data_field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['field'] = 'field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['label'] = '';
+  $handler->display->display_options['fields']['field_last_name']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_last_name']['element_label_colon'] = FALSE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<span>[field_first_name] [field_last_name]</span>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block');
+  $export['user_profiles'] = $view;
 
   return $export;
 }

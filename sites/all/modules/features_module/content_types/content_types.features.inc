@@ -25,6 +25,14 @@ function content_types_node_info() {
       'title_label' => t('Event Name'),
       'help' => '',
     ),
+    'gallery' => array(
+      'name' => t('Gallery'),
+      'base' => 'node_content',
+      'description' => t('Add images, or videos from meetups,drupal camps, trainings, hackathons, and apprentice training program.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'slider_entries' => array(
       'name' => t('Slider Entries'),
       'base' => 'node_content',
@@ -39,6 +47,14 @@ function content_types_node_info() {
       'description' => '',
       'has_title' => '1',
       'title_label' => t('Sponsor Name'),
+      'help' => '',
+    ),
+    'webform' => array(
+      'name' => t('Webform'),
+      'base' => 'node_content',
+      'description' => t('Create a new form or questionnaire accessible to users. Submission results and statistics are recorded and accessible to privileged users.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
       'help' => '',
     ),
   );

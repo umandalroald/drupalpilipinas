@@ -771,37 +771,43 @@ a.click-to-top {
     width: 100%;
   }
 
-  /* line 39, ../sass/breakpoints/_1000px.scss */
+  /* line 40, ../sass/breakpoints/_1000px.scss */
   .node-type-blog .row,
-  .node-type-events .row {
+  .node-type-events .row,
+  .node-type-community-projects .row {
     width: 100%;
   }
-  /* line 43, ../sass/breakpoints/_1000px.scss */
+  /* line 44, ../sass/breakpoints/_1000px.scss */
   .node-type-blog .node-blog,
   .node-type-blog .node-events,
+  .node-type-blog .node-community-projects,
   .node-type-events .node-blog,
-  .node-type-events .node-events {
+  .node-type-events .node-events,
+  .node-type-events .node-community-projects,
+  .node-type-community-projects .node-blog,
+  .node-type-community-projects .node-events,
+  .node-type-community-projects .node-community-projects {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 @media (max-width: 1000px) {
-  /* line 59, ../sass/breakpoints/_1000px.scss */
+  /* line 61, ../sass/breakpoints/_1000px.scss */
   .inner {
     width: 100%;
   }
 
-  /* line 63, ../sass/breakpoints/_1000px.scss */
+  /* line 65, ../sass/breakpoints/_1000px.scss */
   .top-menus {
     padding: 0px 10px;
   }
 
-  /* line 67, ../sass/breakpoints/_1000px.scss */
+  /* line 69, ../sass/breakpoints/_1000px.scss */
   .navigation-container {
     padding: 10px 10px;
   }
 
-  /* line 75, ../sass/breakpoints/_1000px.scss */
+  /* line 77, ../sass/breakpoints/_1000px.scss */
   .footer {
     padding: 0px 10px;
   }

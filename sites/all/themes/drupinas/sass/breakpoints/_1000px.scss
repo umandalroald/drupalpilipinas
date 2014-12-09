@@ -35,13 +35,15 @@
 }
 
 .node-type-blog,
-.node-type-events {
+.node-type-events,
+.node-type-community-projects {
   .row {
     width: 100%;
   }
 
   .node-blog,
-  .node-events {
+  .node-events,
+  .node-community-projects {
     padding-left: 20px;
     padding-right: 20px;
   }

@@ -92,6 +92,16 @@ function content_types_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
+        'insert' => 0,
+        'insert_absolute' => FALSE,
+        'insert_class' => '',
+        'insert_default' => array(
+          0 => 'auto',
+        ),
+        'insert_styles' => array(
+          0 => 'auto',
+        ),
+        'insert_width' => '',
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
@@ -196,6 +206,69 @@ function content_types_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-events-field_event_sponsors'
+  $field_instances['node-events-field_event_sponsors'] = array(
+    'bundle' => 'events',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_event_sponsors',
+    'label' => 'Event Sponsors',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'insert' => 1,
+        'insert_absolute' => 0,
+        'insert_class' => '',
+        'insert_default' => 'auto',
+        'insert_styles' => array(
+          'auto' => 'auto',
+          'icon_link' => 0,
+          'image' => 0,
+          'image_234x181_events_homepage' => 0,
+          'image_249x168_sponsors_homepage' => 'image_249x168_sponsors_homepage',
+          'image_940x400px_image_slider' => 0,
+          'image_large' => 0,
+          'image_medium' => 'image_medium',
+          'image_thumbnail' => 'image_thumbnail',
+          'link' => 0,
+        ),
+        'insert_width' => '',
+        'preview_image_style' => 'medium',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 4,
+    ),
+  );
+
   // Exported field_instance: 'node-events-field_image'
   $field_instances['node-events-field_image'] = array(
     'bundle' => 'events',
@@ -234,6 +307,16 @@ function content_types_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
+        'insert' => 0,
+        'insert_absolute' => FALSE,
+        'insert_class' => '',
+        'insert_default' => array(
+          0 => 'auto',
+        ),
+        'insert_styles' => array(
+          0 => 'auto',
+        ),
+        'insert_width' => '',
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
@@ -284,6 +367,16 @@ function content_types_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
+        'insert' => 0,
+        'insert_absolute' => FALSE,
+        'insert_class' => '',
+        'insert_default' => array(
+          0 => 'auto',
+        ),
+        'insert_styles' => array(
+          0 => 'auto',
+        ),
+        'insert_width' => '',
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
@@ -417,6 +510,16 @@ function content_types_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
+        'insert' => 0,
+        'insert_absolute' => FALSE,
+        'insert_class' => '',
+        'insert_default' => array(
+          0 => 'auto',
+        ),
+        'insert_styles' => array(
+          0 => 'auto',
+        ),
+        'insert_width' => '',
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
@@ -429,6 +532,7 @@ function content_types_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Date');
+  t('Event Sponsors');
   t('Image');
   t('Slider Image');
   t('Support Text');

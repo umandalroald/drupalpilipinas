@@ -712,39 +712,46 @@ a.click-to-top {
   padding: 20px 30px;
 }
 
-/* line 623, ../sass/style.scss */
+/* line 626, ../sass/style.scss */
+.node-type-blog #block-system-main,
+.node-type-events #block-system-main,
+.node-type-community-projects #block-system-main {
+  margin-bottom: 30px;
+}
+
+/* line 632, ../sass/style.scss */
 ::-webkit-scrollbar {
   width: 12px;
 }
 
-/* line 626, ../sass/style.scss */
+/* line 635, ../sass/style.scss */
 ::-webkit-scrollbar-button {
   background: #0069b0;
   width: 12px;
 }
 
-/* line 630, ../sass/style.scss */
+/* line 639, ../sass/style.scss */
 ::-webkit-scrollbar-track {
   width: 12px;
 }
 
-/* line 633, ../sass/style.scss */
+/* line 642, ../sass/style.scss */
 ::-webkit-scrollbar-track-piece {
   width: 12px;
 }
 
-/* line 636, ../sass/style.scss */
+/* line 645, ../sass/style.scss */
 ::-webkit-scrollbar-thumb {
   width: 12px;
   background: #0073ba;
 }
 
-/* line 640, ../sass/style.scss */
+/* line 649, ../sass/style.scss */
 ::-webkit-scrollbar-corner {
   width: 12px;
 }
 
-/* line 643, ../sass/style.scss */
+/* line 652, ../sass/style.scss */
 ::-webkit-resizer {
   width: 12px;
 }

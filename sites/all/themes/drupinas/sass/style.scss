@@ -620,6 +620,15 @@ a.click-to-top {
 }
 
 
+.node-type-blog,
+.node-type-events,
+.node-type-community-projects {
+  #block-system-main {
+    margin-bottom: 30px;
+  }
+}
+
+
 ::-webkit-scrollbar              {
   width: 12px;
 }

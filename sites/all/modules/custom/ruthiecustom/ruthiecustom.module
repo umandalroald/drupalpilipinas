@@ -8,6 +8,9 @@ function ruthiecustom_block_info() {
   $blocks['sliderblock'] = array(
     'info' => t('Block for Slider'),
   );
+  $blocks['home_gallery'] = array(
+    'info' => t('Gallery Block Homepage'),
+  );
   return $blocks;
 }
 
@@ -20,6 +23,9 @@ function ruthiecustom_block_view($delta = '') {
   switch ($delta) {
     case 'sliderblock':
       $block['content'] = _customslider_CONTENT();
+      break;
+    case 'home_gallery':
+      $block['content'] = _customgallery_CONTENT();
       break;
   }
   return $block;
@@ -42,15 +48,28 @@ function _customslider_return_nodes() {
   return $nodes;
 }
 
+function _customgallery_return_nodes() {
+  $query = new EntityFieldQuery();
+  $query
+  ->entityCondition('entity_type', 'node')
+  ->entityCondition('bundle', 'gallery');
+
+  $result = $query->execute();
+  $nodes = array();
+  if (isset($result['node'])) {
+    $nids = array_keys($result['node']);
+    $nodes = node_load_multiple($nids);
+  }
+  return $nodes;
+}
+
 
 /**
 * Return the content of Slider Block.
 */
-
 function _customslider_CONTENT() {
   $nodes = _customslider_return_nodes();
   $content = '';
-  //$list = array();
   foreach ($nodes as $node) {
     $image = image_style_url('940x400px_image_slider', $node->field_slider_image['und'][0]['filename']);
     $title = $node->title;
@@ -68,3 +87,41 @@ function _customslider_CONTENT() {
   );
   return $render;
 }
+
+
+/**
+* Return the content of Gallery Block.
+*/
+function _customgallery_CONTENT() {
+  $nodes = _customgallery_return_nodes();
+  $arrows .= '<span class="arrow-left"><i class="fa fa-angle-left fa-5x"></i></span>';
+  $arrows .= '<span class="arrow-right"><i class="fa fa-angle-right fa-5x"></i></span>';
+  $header = '<div class="sec-head"><h2>Drupal <span>Gallery</span></h2></div>';
+
+  foreach ($nodes as $node) {
+    $image = image_style_url('200x200_gallery_homepage', $node->field_images['und'][0]['filename']);
+    $title = $node->title;
+    $url = '/node/' . $node->nid;
+    $content .= '<div class="item"><a href="' . $url . '"><img src="' . $image . '"></a><a href="' . $url . '"><h3 class="gallery-title">' . $title . '</h3></a></div>';
+  }
+
+  $render = array (
+    'container0' => array (
+      '#prefix' => '<div id="gallery-header">',
+      '#markup' => $header,
+      '#suffix' => '</div>',
+    ),
+    'container2' => array (
+      '#prefix' => '<div id="arrows">',
+      '#markup' => $arrows,
+      '#suffix' => '</div>',
+    ),
+    'container1' => array (
+      '#prefix' => '<div id="gallery_slider">',
+      '#markup' => $content,
+      '#suffix' => '</div>',
+    ),
+  );
+  return $render;
+}
+

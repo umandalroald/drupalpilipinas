@@ -174,9 +174,11 @@
   </section>
 
   <section id="gallery">
-    <?php if ($page['gallery']) : ?>
-      <?php print render($page['gallery']); ?>
-    <?php endif; ?>
+    <div class="inner">
+      <?php if ($page['gallery']) : ?>
+        <?php print render($page['gallery']); ?>
+      <?php endif; ?>
+    </div>
   </section>
 
   <section id="sponsors">

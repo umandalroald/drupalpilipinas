@@ -11,6 +11,17 @@
       autoPlay: true
     });
 
+    $("#gallery_slider").owlCarousel({
+      items : 4
+    });
+
+    $("#gallery .arrow-right").click(function(){
+      $("#gallery_slider").trigger('owl.next');
+    })
+    $("#gallery .arrow-left").click(function(){
+      $("#gallery_slider").trigger('owl.prev');
+    })
+
     //For hiding collapse bootstrap menu after link click
     $(".navigation-container li a, .navigation-container-inner-pages li a").click(function(event) {
       $("#navbarCollapse").removeClass("in").addClass("collapse");

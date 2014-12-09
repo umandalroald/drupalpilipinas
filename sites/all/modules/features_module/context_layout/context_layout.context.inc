@@ -95,6 +95,12 @@ function context_layout_context_default_contexts() {
           'region' => 'events',
           'weight' => '-10',
         ),
+        'ruthiecustom-home_gallery' => array(
+          'module' => 'ruthiecustom',
+          'delta' => 'home_gallery',
+          'region' => 'gallery',
+          'weight' => '-10',
+        ),
         'views-community_projects-block' => array(
           'module' => 'views',
           'delta' => 'community_projects-block',

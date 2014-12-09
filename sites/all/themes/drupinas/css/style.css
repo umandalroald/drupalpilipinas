@@ -712,46 +712,47 @@ a.click-to-top {
   padding: 20px 30px;
 }
 
-/* line 626, ../sass/style.scss */
+/* line 627, ../sass/style.scss */
 .node-type-blog #block-system-main,
 .node-type-events #block-system-main,
-.node-type-community-projects #block-system-main {
+.node-type-community-projects #block-system-main,
+.node-type-gallery #block-system-main {
   margin-bottom: 30px;
 }
 
-/* line 632, ../sass/style.scss */
+/* line 633, ../sass/style.scss */
 ::-webkit-scrollbar {
   width: 12px;
 }
 
-/* line 635, ../sass/style.scss */
+/* line 636, ../sass/style.scss */
 ::-webkit-scrollbar-button {
   background: #0069b0;
   width: 12px;
 }
 
-/* line 639, ../sass/style.scss */
+/* line 640, ../sass/style.scss */
 ::-webkit-scrollbar-track {
   width: 12px;
 }
 
-/* line 642, ../sass/style.scss */
+/* line 643, ../sass/style.scss */
 ::-webkit-scrollbar-track-piece {
   width: 12px;
 }
 
-/* line 645, ../sass/style.scss */
+/* line 646, ../sass/style.scss */
 ::-webkit-scrollbar-thumb {
   width: 12px;
   background: #0073ba;
 }
 
-/* line 649, ../sass/style.scss */
+/* line 650, ../sass/style.scss */
 ::-webkit-scrollbar-corner {
   width: 12px;
 }
 
-/* line 652, ../sass/style.scss */
+/* line 653, ../sass/style.scss */
 ::-webkit-resizer {
   width: 12px;
 }
@@ -778,43 +779,51 @@ a.click-to-top {
     width: 100%;
   }
 
-  /* line 40, ../sass/breakpoints/_1000px.scss */
+  /* line 41, ../sass/breakpoints/_1000px.scss */
   .node-type-blog .row,
   .node-type-events .row,
-  .node-type-community-projects .row {
+  .node-type-community-projects .row,
+  .node-type-gallery .row {
     width: 100%;
   }
-  /* line 44, ../sass/breakpoints/_1000px.scss */
+  /* line 45, ../sass/breakpoints/_1000px.scss */
   .node-type-blog .node-blog,
   .node-type-blog .node-events,
-  .node-type-blog .node-community-projects,
+  .node-type-blog .node-community-projects
+  .node-gallery,
   .node-type-events .node-blog,
   .node-type-events .node-events,
-  .node-type-events .node-community-projects,
+  .node-type-events .node-community-projects
+  .node-gallery,
   .node-type-community-projects .node-blog,
   .node-type-community-projects .node-events,
-  .node-type-community-projects .node-community-projects {
+  .node-type-community-projects .node-community-projects
+  .node-gallery,
+  .node-type-gallery .node-blog,
+  .node-type-gallery .node-events,
+  .node-type-gallery .node-community-projects
+  .node-gallery {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 @media (max-width: 1000px) {
-  /* line 61, ../sass/breakpoints/_1000px.scss */
+  /* line 63, ../sass/breakpoints/_1000px.scss */
   .inner {
     width: 100%;
   }
 
-  /* line 65, ../sass/breakpoints/_1000px.scss */
+  /* line 67, ../sass/breakpoints/_1000px.scss */
   .top-menus {
     padding: 0px 10px;
   }
 
-  /* line 69, ../sass/breakpoints/_1000px.scss */
+  /* line 71, ../sass/breakpoints/_1000px.scss */
   .navigation-container {
     padding: 10px 10px;
   }
 
-  /* line 77, ../sass/breakpoints/_1000px.scss */
+  /* line 79, ../sass/breakpoints/_1000px.scss */
   .footer {
     padding: 0px 10px;
   }

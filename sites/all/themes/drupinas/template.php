@@ -19,7 +19,7 @@ function drupinas_preprocess_page(&$variables, $hook) {
     $variables['theme_hook_suggestions'][] = 'page__' . $variables['node']->type;
     $node = menu_get_object();
 
-    //if node type is blog
+    //if node type is blog, events, community projects
     if ($variables['node']->type == 'blog' || $variables['node']->type == 'events' || $variables['node']->type == 'community_projects') {
       if (isset($node->field_image['und'][0]['uri'])) {
         $bg_big_bgimage = image_style_url('1600x450_blog_big_image', $node->field_image['und'][0]['uri']);
@@ -27,6 +27,13 @@ function drupinas_preprocess_page(&$variables, $hook) {
       }
     }
 
+    //if node type is gallery 
+    if ($variables['node']->type == 'gallery') {
+      if (isset($node->field_images['und'][0]['uri'])) {
+        $bg_big_bgimage = image_style_url('1600x450_blog_big_image', $node->field_images['und'][0]['uri']);
+        $variables['bg_big_bgimage'] = $bg_big_bgimage;
+      }
+    }
   }
 
 }

@@ -40,6 +40,6 @@ features[node][] = slider_entries
 features[node][] = sponsors
 features[node][] = webform
 features[taxonomy][] = tags
+features_exclude[dependencies][options] = options
 features_exclude[field_base][body] = body
 features_exclude[field_base][field_image] = field_image
-features_exclude[dependencies][options] = options

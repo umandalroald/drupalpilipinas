@@ -36,14 +36,16 @@
 
 .node-type-blog,
 .node-type-events,
-.node-type-community-projects {
+.node-type-community-projects,
+.node-type-gallery {
   .row {
     width: 100%;
   }
 
   .node-blog,
   .node-events,
-  .node-community-projects {
+  .node-community-projects
+  .node-gallery {
     padding-left: 20px;
     padding-right: 20px;
   }

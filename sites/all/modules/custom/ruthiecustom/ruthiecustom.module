@@ -37,7 +37,8 @@ function _customslider_return_nodes() {
   $query = new EntityFieldQuery();
   $query
   ->entityCondition('entity_type', 'node')
-  ->entityCondition('bundle', 'slider_entries');
+  ->entityCondition('bundle', 'slider_entries')
+  ->propertyOrderBy('changed', 'DESC');
 
   $result = $query->execute();
   $nodes = array();
@@ -52,7 +53,8 @@ function _customgallery_return_nodes() {
   $query = new EntityFieldQuery();
   $query
   ->entityCondition('entity_type', 'node')
-  ->entityCondition('bundle', 'gallery');
+  ->entityCondition('bundle', 'gallery')
+  ->propertyOrderBy('changed', 'DESC');
 
   $result = $query->execute();
   $nodes = array();

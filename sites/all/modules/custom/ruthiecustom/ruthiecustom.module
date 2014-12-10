@@ -101,7 +101,13 @@ function _customgallery_CONTENT() {
   foreach ($nodes as $node) {
     $image = image_style_url('200x200_gallery_homepage', $node->field_images['und'][0]['filename']);
     $title = $node->title;
-    $url = '/node/' . $node->nid;
+
+    if (drupal_lookup_path('alias',"node/".$node->nid)) {
+      $url = drupal_lookup_path('alias',"node/".$node->nid);
+    } else {
+      $url = '/node/' . $node->nid;
+    }
+    
     $content .= '<div class="item"><a href="' . $url . '"><img src="' . $image . '"></a><a href="' . $url . '"><h3 class="gallery-title">' . $title . '</h3></a></div>';
   }
 

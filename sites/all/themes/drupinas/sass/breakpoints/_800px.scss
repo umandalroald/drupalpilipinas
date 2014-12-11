@@ -1,32 +1,19 @@
 @media (max-width:890px) {
 
-
 #projects {
-
   .views-field.views-field-field-image,
   .views-field.views-field-nothing {
     margin-bottom: 30px;
   }
-
   .views-field.views-field-field-image{
     overflow: hidden;
   }
-   
   .views-row-odd {
-    .views-field.views-field-field-image {
-
-    }
-
     .views-field.views-field-nothing {
       padding-left: 10px;
     }
   } 
-
   .views-row-even {
-    .views-field.views-field-field-image {
-
-    }
-
     .views-field.views-field-nothing {
       padding-right: 10px;
     }
@@ -35,18 +22,15 @@
 
 
 .faded {
-
   padding: 10px 0;
   width: 100%;
   border-bottom: 1px solid $theme-blue;
   background: #fefefe;
-
   .navbar-header a img{
     border-radius: 0px;
     background-color: rgba(255, 255, 255, 0.0);
     padding: 0px 0px 0px 10px;
   }
-
   .navbar {
     min-height: 50px;
     margin-bottom: 0px;
@@ -55,7 +39,6 @@
   .navbar-default {
     background-color: transparent;
   }
-
   li a {
     font-family: 'OpenSans-Regular';
     color: #888888 !important;
@@ -65,7 +48,6 @@
       border-bottom: 3px solid $theme-blue + 80;
     }
   }
-
   li a.active {
     background-color: transparent !important;
     color: $theme-blue !important;
@@ -73,6 +55,27 @@
     font-weight: bold;
   }
 }
+
+
+.node-type-jobs {
+
+  .field-name-field-company-logo .field-items {
+
+    width: 100%;
+    img{
+      width: 30%;
+      height: auto;
+    }
+  }
+
+  .field-name-field-company-name,
+  .field-name-body {
+    width: 70%;
+    padding-right: 10px;
+  }
+
+}
+
 
 
 }

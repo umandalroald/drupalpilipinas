@@ -745,7 +745,8 @@ a.click-to-top {
 }
 
 .node-type-page,
-.page-jobs {
+.page-jobs,
+.node-type-jobs {
   .region.region-content {
     min-height: 850px;
   }
@@ -761,38 +762,30 @@ a.click-to-top {
 }
 
 .page-jobs {
-
   .region.region-content {
     min-height: 650px;
   }
-
   .page-header {
     margin-top: 30px;
   }
-
   .view-content {
     width: 100%;
   }
-
   .views-row {
     vertical-align: top;
     margin-bottom: 30px;
   }
-
   .views-field-field-company-logo,
   .views-field-nothing {
     display: inline-block;
     margin-right: -4px;
     vertical-align: top;
   }
-
   .views-field-field-company-logo {
     width: 27%;
   }
-
   .views-field-nothing{
     width: 73%;
-
     .title {
       text-transform: uppercase;
       @include font-size(35);
@@ -802,20 +795,49 @@ a.click-to-top {
         text-decoration: none;
       }
     }
-
     .date {
       margin-bottom: 5px;
       @include font-size(20);
     }
-
     .company {
       margin-bottom: 5px;
       .name {
         font-weight: 900;
       }
     }
-
   }
+}
+
+.node-type-jobs {
+  .region.region-content {
+    min-height: 650px;
+  }
+  .submitted {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .field-name-field-company-logo .field-items {
+    position: relative;
+    width: 100%;
+    img{
+      position: absolute;
+      right: 0px;
+    }
+  }
+
+  .field-name-field-company-name {
+    margin-bottom: 20px;
+  }
+
+  .field-name-field-company-name,
+  .field-name-body {
+    width: 70%;
+  }
+
 }
 
 

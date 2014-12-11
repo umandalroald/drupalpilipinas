@@ -841,14 +841,16 @@ a.click-to-top {
   margin-bottom: 20px;
 }
 
-/* line 749, ../sass/style.scss */
+/* line 750, ../sass/style.scss */
 .node-type-page .region.region-content,
-.page-jobs .region.region-content {
+.page-jobs .region.region-content,
+.node-type-jobs .region.region-content {
   min-height: 850px;
 }
-/* line 753, ../sass/style.scss */
+/* line 754, ../sass/style.scss */
 .node-type-page .page-header,
-.page-jobs .page-header {
+.page-jobs .page-header,
+.node-type-jobs .page-header {
   font-size: 55px;
   font-size: 3.4375rem;
   font-family: 'OpenSans-Regular';
@@ -862,35 +864,35 @@ a.click-to-top {
 .page-jobs .region.region-content {
   min-height: 650px;
 }
-/* line 769, ../sass/style.scss */
+/* line 768, ../sass/style.scss */
 .page-jobs .page-header {
   margin-top: 30px;
 }
-/* line 773, ../sass/style.scss */
+/* line 771, ../sass/style.scss */
 .page-jobs .view-content {
   width: 100%;
 }
-/* line 777, ../sass/style.scss */
+/* line 774, ../sass/style.scss */
 .page-jobs .views-row {
   vertical-align: top;
   margin-bottom: 30px;
 }
-/* line 782, ../sass/style.scss */
+/* line 778, ../sass/style.scss */
 .page-jobs .views-field-field-company-logo,
 .page-jobs .views-field-nothing {
   display: inline-block;
   margin-right: -4px;
   vertical-align: top;
 }
-/* line 789, ../sass/style.scss */
+/* line 784, ../sass/style.scss */
 .page-jobs .views-field-field-company-logo {
   width: 27%;
 }
-/* line 793, ../sass/style.scss */
+/* line 787, ../sass/style.scss */
 .page-jobs .views-field-nothing {
   width: 73%;
 }
-/* line 796, ../sass/style.scss */
+/* line 789, ../sass/style.scss */
 .page-jobs .views-field-nothing .title {
   text-transform: uppercase;
   font-size: 35px;
@@ -898,58 +900,90 @@ a.click-to-top {
   font-weight: 900;
   margin-bottom: 1px;
 }
-/* line 801, ../sass/style.scss */
+/* line 794, ../sass/style.scss */
 .page-jobs .views-field-nothing .title a {
   text-decoration: none;
 }
-/* line 806, ../sass/style.scss */
+/* line 798, ../sass/style.scss */
 .page-jobs .views-field-nothing .date {
   margin-bottom: 5px;
   font-size: 20px;
   font-size: 1.25rem;
 }
-/* line 811, ../sass/style.scss */
+/* line 802, ../sass/style.scss */
 .page-jobs .views-field-nothing .company {
   margin-bottom: 5px;
 }
-/* line 813, ../sass/style.scss */
+/* line 804, ../sass/style.scss */
 .page-jobs .views-field-nothing .company .name {
   font-weight: 900;
 }
 
-/* line 822, ../sass/style.scss */
+/* line 812, ../sass/style.scss */
+.node-type-jobs .region.region-content {
+  min-height: 650px;
+}
+/* line 815, ../sass/style.scss */
+.node-type-jobs .submitted {
+  display: none;
+}
+/* line 819, ../sass/style.scss */
+.node-type-jobs .content {
+  width: 100%;
+}
+/* line 823, ../sass/style.scss */
+.node-type-jobs .field-name-field-company-logo .field-items {
+  position: relative;
+  width: 100%;
+}
+/* line 826, ../sass/style.scss */
+.node-type-jobs .field-name-field-company-logo .field-items img {
+  position: absolute;
+  right: 0px;
+}
+/* line 832, ../sass/style.scss */
+.node-type-jobs .field-name-field-company-name {
+  margin-bottom: 20px;
+}
+/* line 836, ../sass/style.scss */
+.node-type-jobs .field-name-field-company-name,
+.node-type-jobs .field-name-body {
+  width: 70%;
+}
+
+/* line 844, ../sass/style.scss */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* line 825, ../sass/style.scss */
+/* line 847, ../sass/style.scss */
 ::-webkit-scrollbar-button {
   background: #0069b0;
   width: 10px;
 }
 
-/* line 829, ../sass/style.scss */
+/* line 851, ../sass/style.scss */
 ::-webkit-scrollbar-track {
   width: 10px;
 }
 
-/* line 832, ../sass/style.scss */
+/* line 854, ../sass/style.scss */
 ::-webkit-scrollbar-track-piece {
   width: 10px;
 }
 
-/* line 835, ../sass/style.scss */
+/* line 857, ../sass/style.scss */
 ::-webkit-scrollbar-thumb {
   width: 10px;
   background: #0073ba;
 }
 
-/* line 839, ../sass/style.scss */
+/* line 861, ../sass/style.scss */
 ::-webkit-scrollbar-corner {
   width: 10px;
 }
 
-/* line 842, ../sass/style.scss */
+/* line 864, ../sass/style.scss */
 ::-webkit-resizer {
   width: 10px;
 }
@@ -982,41 +1016,45 @@ a.click-to-top {
   }
 }
 @media (max-width: 1030px) {
-  /* line 48, ../sass/breakpoints/_1000px.scss */
+  /* line 49, ../sass/breakpoints/_1000px.scss */
   .page-user .page-header,
   .node-type-page .page-header,
-  .page-jobs .page-header {
+  .page-jobs .page-header,
+  .node-type-jobs .page-header {
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* line 52, ../sass/breakpoints/_1000px.scss */
+  /* line 53, ../sass/breakpoints/_1000px.scss */
   .page-user .col-sm-12,
   .node-type-page .col-sm-12,
-  .page-jobs .col-sm-12 {
+  .page-jobs .col-sm-12,
+  .node-type-jobs .col-sm-12 {
     padding-right: 0px;
     padding-left: 0px;
   }
-  /* line 56, ../sass/breakpoints/_1000px.scss */
+  /* line 57, ../sass/breakpoints/_1000px.scss */
   .page-user .row,
   .node-type-page .row,
-  .page-jobs .row {
+  .page-jobs .row,
+  .node-type-jobs .row {
     margin-right: 0px;
     margin-left: 0px;
   }
 
-  /* line 64, ../sass/breakpoints/_1000px.scss */
+  /* line 66, ../sass/breakpoints/_1000px.scss */
   .node-type-page .region.region-content,
-  .page-jobs .region.region-content {
+  .page-jobs .region.region-content,
+  .node-type-jobs .region.region-content {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  /* line 73, ../sass/breakpoints/_1000px.scss */
+  /* line 75, ../sass/breakpoints/_1000px.scss */
   .big-bg-image .title-wrap h2 {
     width: 100%;
   }
 
-  /* line 86, ../sass/breakpoints/_1000px.scss */
+  /* line 88, ../sass/breakpoints/_1000px.scss */
   .node-type-blog .row,
   .node-type-events .row,
   .node-type-community-projects .row,
@@ -1024,7 +1062,7 @@ a.click-to-top {
   .page-user .row {
     width: 100%;
   }
-  /* line 90, ../sass/breakpoints/_1000px.scss */
+  /* line 92, ../sass/breakpoints/_1000px.scss */
   .node-type-blog .node-blog,
   .node-type-blog .node-events,
   .node-type-blog .node-community-projects
@@ -1055,22 +1093,22 @@ a.click-to-top {
   }
 }
 @media (max-width: 1000px) {
-  /* line 109, ../sass/breakpoints/_1000px.scss */
+  /* line 111, ../sass/breakpoints/_1000px.scss */
   .inner {
     width: 100%;
   }
 
-  /* line 113, ../sass/breakpoints/_1000px.scss */
+  /* line 115, ../sass/breakpoints/_1000px.scss */
   .top-menus {
     padding: 0px 10px;
   }
 
-  /* line 117, ../sass/breakpoints/_1000px.scss */
+  /* line 119, ../sass/breakpoints/_1000px.scss */
   .navigation-container {
     padding: 10px 10px;
   }
 
-  /* line 125, ../sass/breakpoints/_1000px.scss */
+  /* line 127, ../sass/breakpoints/_1000px.scss */
   .footer {
     padding: 0px 10px;
   }
@@ -1082,68 +1120,84 @@ a.click-to-top {
   }
 }
 @media (max-width: 890px) {
-  /* line 6, ../sass/breakpoints/_800px.scss */
+  /* line 4, ../sass/breakpoints/_800px.scss */
   #projects .views-field.views-field-field-image,
   #projects .views-field.views-field-nothing {
     margin-bottom: 30px;
   }
-  /* line 11, ../sass/breakpoints/_800px.scss */
+  /* line 8, ../sass/breakpoints/_800px.scss */
   #projects .views-field.views-field-field-image {
     overflow: hidden;
   }
-  /* line 20, ../sass/breakpoints/_800px.scss */
+  /* line 12, ../sass/breakpoints/_800px.scss */
   #projects .views-row-odd .views-field.views-field-nothing {
     padding-left: 10px;
   }
-  /* line 30, ../sass/breakpoints/_800px.scss */
+  /* line 17, ../sass/breakpoints/_800px.scss */
   #projects .views-row-even .views-field.views-field-nothing {
     padding-right: 10px;
   }
 
-  /* line 37, ../sass/breakpoints/_800px.scss */
+  /* line 24, ../sass/breakpoints/_800px.scss */
   .faded {
     padding: 10px 0;
     width: 100%;
     border-bottom: 1px solid #0073ba;
     background: #fefefe;
   }
-  /* line 44, ../sass/breakpoints/_800px.scss */
+  /* line 29, ../sass/breakpoints/_800px.scss */
   .faded .navbar-header a img {
     border-radius: 0px;
     background-color: rgba(255, 255, 255, 0);
     padding: 0px 0px 0px 10px;
   }
-  /* line 50, ../sass/breakpoints/_800px.scss */
+  /* line 34, ../sass/breakpoints/_800px.scss */
   .faded .navbar {
     min-height: 50px;
     margin-bottom: 0px;
     border: 0px solid transparent;
   }
-  /* line 55, ../sass/breakpoints/_800px.scss */
+  /* line 39, ../sass/breakpoints/_800px.scss */
   .faded .navbar-default {
     background-color: transparent;
   }
-  /* line 59, ../sass/breakpoints/_800px.scss */
+  /* line 42, ../sass/breakpoints/_800px.scss */
   .faded li a {
     font-family: 'OpenSans-Regular';
     color: #888888 !important;
     border-bottom: 3px solid transparent;
   }
-  /* line 63, ../sass/breakpoints/_800px.scss */
+  /* line 46, ../sass/breakpoints/_800px.scss */
   .faded li a:hover {
     color: #0073ba !important;
     border-bottom: 3px solid #50c3ff;
   }
-  /* line 69, ../sass/breakpoints/_800px.scss */
+  /* line 51, ../sass/breakpoints/_800px.scss */
   .faded li a.active {
     background-color: transparent !important;
     color: #0073ba !important;
     border-bottom: 3px solid #0073ba;
     font-weight: bold;
   }
+
+  /* line 62, ../sass/breakpoints/_800px.scss */
+  .node-type-jobs .field-name-field-company-logo .field-items {
+    width: 100%;
+  }
+  /* line 65, ../sass/breakpoints/_800px.scss */
+  .node-type-jobs .field-name-field-company-logo .field-items img {
+    width: 30%;
+    height: auto;
+  }
+  /* line 71, ../sass/breakpoints/_800px.scss */
+  .node-type-jobs .field-name-field-company-name,
+  .node-type-jobs .field-name-body {
+    width: 70%;
+    padding-right: 10px;
+  }
 }
 @media (max-width: 840px) {
-  /* line 84, ../sass/breakpoints/_800px.scss */
+  /* line 87, ../sass/breakpoints/_800px.scss */
   #events .views-row-1,
   #events .views-row-2, #blog .views-row-1,
   #blog .views-row-2 {
@@ -1151,7 +1205,7 @@ a.click-to-top {
   }
 }
 @media (max-width: 815px) {
-  /* line 101, ../sass/breakpoints/_800px.scss */
+  /* line 104, ../sass/breakpoints/_800px.scss */
   #sponsors .views-row {
     width: 49%;
   }
@@ -1297,6 +1351,24 @@ a.click-to-top {
   /* line 108, ../sass/breakpoints/_600px.scss */
   #projects .views-row-even .views-field.views-field-field-image .field-content {
     text-align: center;
+  }
+
+  /* line 119, ../sass/breakpoints/_600px.scss */
+  .node-type-jobs .field-name-field-company-logo .field-items {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  /* line 122, ../sass/breakpoints/_600px.scss */
+  .node-type-jobs .field-name-field-company-logo .field-items img {
+    position: relative;
+    left: 0px;
+    width: auto;
+  }
+  /* line 129, ../sass/breakpoints/_600px.scss */
+  .node-type-jobs .field-name-field-company-name,
+  .node-type-jobs .field-name-body {
+    width: 100%;
+    padding-right: 00px;
   }
 }
 @media (max-width: 570px) {

@@ -841,39 +841,54 @@ a.click-to-top {
   margin-bottom: 20px;
 }
 
-/* line 749, ../sass/style.scss */
+/* line 748, ../sass/style.scss */
+.node-type-page .region.region-content {
+  min-height: 850px;
+}
+/* line 752, ../sass/style.scss */
+.node-type-page .page-header {
+  font-size: 55px;
+  font-size: 3.4375rem;
+  font-family: 'OpenSans-Regular';
+  font-weight: 700;
+  padding: 0;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+/* line 764, ../sass/style.scss */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* line 752, ../sass/style.scss */
+/* line 767, ../sass/style.scss */
 ::-webkit-scrollbar-button {
   background: #0069b0;
   width: 10px;
 }
 
-/* line 756, ../sass/style.scss */
+/* line 771, ../sass/style.scss */
 ::-webkit-scrollbar-track {
   width: 10px;
 }
 
-/* line 759, ../sass/style.scss */
+/* line 774, ../sass/style.scss */
 ::-webkit-scrollbar-track-piece {
   width: 10px;
 }
 
-/* line 762, ../sass/style.scss */
+/* line 777, ../sass/style.scss */
 ::-webkit-scrollbar-thumb {
   width: 10px;
   background: #0073ba;
 }
 
-/* line 766, ../sass/style.scss */
+/* line 781, ../sass/style.scss */
 ::-webkit-scrollbar-corner {
   width: 10px;
 }
 
-/* line 769, ../sass/style.scss */
+/* line 784, ../sass/style.scss */
 ::-webkit-resizer {
   width: 10px;
 }
@@ -895,28 +910,37 @@ a.click-to-top {
   }
 }
 @media (max-width: 1030px) {
-  /* line 30, ../sass/breakpoints/_1000px.scss */
-  .page-user .page-header {
+  /* line 31, ../sass/breakpoints/_1000px.scss */
+  .page-user .page-header,
+  .node-type-page .page-header {
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* line 34, ../sass/breakpoints/_1000px.scss */
-  .page-user .col-sm-12 {
+  /* line 35, ../sass/breakpoints/_1000px.scss */
+  .page-user .col-sm-12,
+  .node-type-page .col-sm-12 {
     padding-right: 0px;
     padding-left: 0px;
   }
-  /* line 38, ../sass/breakpoints/_1000px.scss */
-  .page-user .row {
+  /* line 39, ../sass/breakpoints/_1000px.scss */
+  .page-user .row,
+  .node-type-page .row {
     margin-right: 0px;
     margin-left: 0px;
   }
 
   /* line 46, ../sass/breakpoints/_1000px.scss */
+  .node-type-page .region.region-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* line 55, ../sass/breakpoints/_1000px.scss */
   .big-bg-image .title-wrap h2 {
     width: 100%;
   }
 
-  /* line 57, ../sass/breakpoints/_1000px.scss */
+  /* line 68, ../sass/breakpoints/_1000px.scss */
   .node-type-blog .row,
   .node-type-events .row,
   .node-type-community-projects .row,
@@ -924,7 +948,7 @@ a.click-to-top {
   .page-user .row {
     width: 100%;
   }
-  /* line 61, ../sass/breakpoints/_1000px.scss */
+  /* line 72, ../sass/breakpoints/_1000px.scss */
   .node-type-blog .node-blog,
   .node-type-blog .node-events,
   .node-type-blog .node-community-projects
@@ -955,22 +979,22 @@ a.click-to-top {
   }
 }
 @media (max-width: 1000px) {
-  /* line 80, ../sass/breakpoints/_1000px.scss */
+  /* line 91, ../sass/breakpoints/_1000px.scss */
   .inner {
     width: 100%;
   }
 
-  /* line 84, ../sass/breakpoints/_1000px.scss */
+  /* line 95, ../sass/breakpoints/_1000px.scss */
   .top-menus {
     padding: 0px 10px;
   }
 
-  /* line 88, ../sass/breakpoints/_1000px.scss */
+  /* line 99, ../sass/breakpoints/_1000px.scss */
   .navigation-container {
     padding: 10px 10px;
   }
 
-  /* line 96, ../sass/breakpoints/_1000px.scss */
+  /* line 107, ../sass/breakpoints/_1000px.scss */
   .footer {
     padding: 0px 10px;
   }

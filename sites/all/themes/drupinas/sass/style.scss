@@ -744,6 +744,21 @@ a.click-to-top {
   }
 }
 
+.node-type-page {
+  .region.region-content {
+    min-height: 850px;
+  }
+
+  .page-header {
+    @include font-size(55);
+    font-family: 'OpenSans-Regular';
+    font-weight: 700;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+
 
 
 ::-webkit-scrollbar              {

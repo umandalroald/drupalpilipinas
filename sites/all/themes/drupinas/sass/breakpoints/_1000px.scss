@@ -26,7 +26,8 @@
 
 @media (max-width:1030px) {
 
-.page-user {
+.page-user,
+.node-type-page {
   .page-header {
     padding-left: 20px;
     padding-right: 20px;
@@ -41,6 +42,14 @@
   }
 }
 
+.node-type-page {
+  .region.region-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
 .big-bg-image {
   .title-wrap {
     h2 {
@@ -48,6 +57,8 @@
     }
   }
 }
+
+
 
 .node-type-blog,
 .node-type-events,

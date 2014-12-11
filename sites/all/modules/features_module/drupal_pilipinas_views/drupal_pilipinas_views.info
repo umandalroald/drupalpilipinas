@@ -9,6 +9,7 @@ features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[views_view][] = community_projects
 features[views_view][] = events
+features[views_view][] = jobs
 features[views_view][] = sponsors
 features[views_view][] = user_profiles
 features_exclude[dependencies][ctools] = ctools

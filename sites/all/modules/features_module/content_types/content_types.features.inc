@@ -33,6 +33,14 @@ function content_types_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'jobs' => array(
+      'name' => t('Jobs'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'slider_entries' => array(
       'name' => t('Slider Entries'),
       'base' => 'node_content',

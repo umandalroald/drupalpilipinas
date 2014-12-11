@@ -274,6 +274,13 @@ function drupal_pilipinas_views_views_default_views() {
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'long';
   $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
+  /* Field: Content: Company Name */
+  $handler->display->display_options['fields']['field_company_name']['id'] = 'field_company_name';
+  $handler->display->display_options['fields']['field_company_name']['table'] = 'field_data_field_company_name';
+  $handler->display->display_options['fields']['field_company_name']['field'] = 'field_company_name';
+  $handler->display->display_options['fields']['field_company_name']['label'] = '';
+  $handler->display->display_options['fields']['field_company_name']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_company_name']['element_label_colon'] = FALSE;
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
@@ -294,6 +301,7 @@ function drupal_pilipinas_views_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="title">[title]</div>
 <div class="date">[created]</div>
+<div class="company">Company: <span class="name">[field_company_name]</span></div>
 <div class="body">[body]</div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */

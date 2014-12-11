@@ -594,6 +594,46 @@ function content_types_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-jobs-field_company_name'
+  $field_instances['node-jobs-field_company_name'] = array(
+    'bundle' => 'jobs',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_company_name',
+    'label' => 'Company Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 33,
+    ),
+  );
+
   // Exported field_instance: 'node-slider_entries-field_slider_image'
   $field_instances['node-slider_entries-field_slider_image'] = array(
     'bundle' => 'slider_entries',
@@ -802,6 +842,7 @@ function content_types_field_default_field_instances() {
   t('About the Image');
   t('Body');
   t('Company Logo');
+  t('Company Name');
   t('Date');
   t('Event Sponsors');
   t('Help to sort the images');

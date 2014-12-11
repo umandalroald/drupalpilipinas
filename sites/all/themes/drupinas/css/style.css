@@ -858,35 +858,39 @@ a.click-to-top {
   margin-bottom: 30px;
 }
 
-/* line 764, ../sass/style.scss */
+/* line 765, ../sass/style.scss */
+.page-jobs .region.region-content {
+  min-height: 650px;
+}
+/* line 769, ../sass/style.scss */
 .page-jobs .page-header {
   margin-top: 30px;
 }
-/* line 768, ../sass/style.scss */
+/* line 773, ../sass/style.scss */
 .page-jobs .view-content {
   width: 100%;
 }
-/* line 772, ../sass/style.scss */
+/* line 777, ../sass/style.scss */
 .page-jobs .views-row {
   vertical-align: top;
   margin-bottom: 30px;
 }
-/* line 777, ../sass/style.scss */
+/* line 782, ../sass/style.scss */
 .page-jobs .views-field-field-company-logo,
 .page-jobs .views-field-nothing {
   display: inline-block;
   margin-right: -4px;
   vertical-align: top;
 }
-/* line 784, ../sass/style.scss */
+/* line 789, ../sass/style.scss */
 .page-jobs .views-field-field-company-logo {
   width: 27%;
 }
-/* line 788, ../sass/style.scss */
+/* line 793, ../sass/style.scss */
 .page-jobs .views-field-nothing {
   width: 73%;
 }
-/* line 791, ../sass/style.scss */
+/* line 796, ../sass/style.scss */
 .page-jobs .views-field-nothing .title {
   text-transform: uppercase;
   font-size: 35px;
@@ -894,58 +898,58 @@ a.click-to-top {
   font-weight: 900;
   margin-bottom: 1px;
 }
-/* line 796, ../sass/style.scss */
+/* line 801, ../sass/style.scss */
 .page-jobs .views-field-nothing .title a {
   text-decoration: none;
 }
-/* line 801, ../sass/style.scss */
+/* line 806, ../sass/style.scss */
 .page-jobs .views-field-nothing .date {
   margin-bottom: 5px;
   font-size: 20px;
   font-size: 1.25rem;
 }
-/* line 806, ../sass/style.scss */
+/* line 811, ../sass/style.scss */
 .page-jobs .views-field-nothing .company {
   margin-bottom: 5px;
 }
-/* line 808, ../sass/style.scss */
+/* line 813, ../sass/style.scss */
 .page-jobs .views-field-nothing .company .name {
   font-weight: 900;
 }
 
-/* line 817, ../sass/style.scss */
+/* line 822, ../sass/style.scss */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* line 820, ../sass/style.scss */
+/* line 825, ../sass/style.scss */
 ::-webkit-scrollbar-button {
   background: #0069b0;
   width: 10px;
 }
 
-/* line 824, ../sass/style.scss */
+/* line 829, ../sass/style.scss */
 ::-webkit-scrollbar-track {
   width: 10px;
 }
 
-/* line 827, ../sass/style.scss */
+/* line 832, ../sass/style.scss */
 ::-webkit-scrollbar-track-piece {
   width: 10px;
 }
 
-/* line 830, ../sass/style.scss */
+/* line 835, ../sass/style.scss */
 ::-webkit-scrollbar-thumb {
   width: 10px;
   background: #0073ba;
 }
 
-/* line 834, ../sass/style.scss */
+/* line 839, ../sass/style.scss */
 ::-webkit-scrollbar-corner {
   width: 10px;
 }
 
-/* line 837, ../sass/style.scss */
+/* line 842, ../sass/style.scss */
 ::-webkit-resizer {
   width: 10px;
 }

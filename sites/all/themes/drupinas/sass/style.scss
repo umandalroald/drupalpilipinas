@@ -761,6 +761,11 @@ a.click-to-top {
 }
 
 .page-jobs {
+
+  .region.region-content {
+    min-height: 650px;
+  }
+
   .page-header {
     margin-top: 30px;
   }

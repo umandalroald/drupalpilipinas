@@ -26,6 +26,21 @@
 
 @media (max-width:1030px) {
 
+.page-user {
+  .page-header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .col-sm-12 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
 .big-bg-image {
   .title-wrap {
     h2 {
@@ -37,7 +52,8 @@
 .node-type-blog,
 .node-type-events,
 .node-type-community-projects,
-.node-type-gallery {
+.node-type-gallery,
+.page-user {
   .row {
     width: 100%;
   }
@@ -45,7 +61,8 @@
   .node-blog,
   .node-events,
   .node-community-projects
-  .node-gallery {
+  .node-gallery,
+  .profile {
     padding-left: 20px;
     padding-right: 20px;
   }

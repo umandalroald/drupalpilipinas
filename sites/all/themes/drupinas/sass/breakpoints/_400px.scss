@@ -9,4 +9,33 @@
 
 }
 
+.page-user {
+  .field-name-field-first-name,
+  .field-name-field-last-name {
+    display: inline-block;
+    font-family: 'OpenSans-Regular';
+    @include font-size(45);
+    font-weight: 900;
+    margin: 15px 0;
+  }
+  .field-name-field-last-name {
+    margin-left: 10px;
+  }
+}
+
+}
+
+
+@media (max-width:400px) {
+
+.page-user {
+  .field-name-field-image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+}
+
 }

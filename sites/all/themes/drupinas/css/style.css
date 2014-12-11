@@ -697,10 +697,6 @@ h2 {
   color: #c11e22;
   font-weight: 800;
 }
-/* line 603, ../sass/style.scss */
-#projects .views-row-last .views-field.views-field-nothing .title {
-  margin-top: 20px;
-}
 
 /* line 610, ../sass/style.scss */
 #sponsors {
@@ -790,41 +786,92 @@ a.click-to-top {
   margin-bottom: 30px;
 }
 
-/* line 691, ../sass/style.scss */
-::-webkit-scrollbar {
-  width: 12px;
+/* line 693, ../sass/style.scss */
+.page-user .page-header {
+  font-size: 25px;
+  font-size: 1.5625rem;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+/* line 700, ../sass/style.scss */
+.page-user .profile > h3 {
+  margin: 0;
+}
+/* line 704, ../sass/style.scss */
+.page-user .content {
+  text-align: center;
+}
+/* line 709, ../sass/style.scss */
+.page-user .field-name-field-image img {
+  border-radius: 100%;
+  border: 10px solid #0073ba;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 717, ../sass/style.scss */
+.page-user .field-name-field-image img:hover {
+  border-radius: 15%;
+}
+/* line 723, ../sass/style.scss */
+.page-user .field-name-field-first-name,
+.page-user .field-name-field-last-name {
+  display: inline-block;
+  font-family: 'OpenSans-Regular';
+  font-size: 65px;
+  font-size: 4.0625rem;
+  font-weight: 900;
+  margin: 15px 0;
+}
+/* line 732, ../sass/style.scss */
+.page-user .field-name-field-last-name {
+  margin-left: 10px;
+}
+/* line 736, ../sass/style.scss */
+.page-user .field-name-field-drupal-projects {
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
-/* line 694, ../sass/style.scss */
+/* line 745, ../sass/style.scss */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* line 748, ../sass/style.scss */
 ::-webkit-scrollbar-button {
   background: #0069b0;
-  width: 12px;
+  width: 10px;
 }
 
-/* line 698, ../sass/style.scss */
+/* line 752, ../sass/style.scss */
 ::-webkit-scrollbar-track {
-  width: 12px;
+  width: 10px;
 }
 
-/* line 701, ../sass/style.scss */
+/* line 755, ../sass/style.scss */
 ::-webkit-scrollbar-track-piece {
-  width: 12px;
+  width: 10px;
 }
 
-/* line 704, ../sass/style.scss */
+/* line 758, ../sass/style.scss */
 ::-webkit-scrollbar-thumb {
-  width: 12px;
+  width: 10px;
   background: #0073ba;
 }
 
-/* line 708, ../sass/style.scss */
+/* line 762, ../sass/style.scss */
 ::-webkit-scrollbar-corner {
-  width: 12px;
+  width: 10px;
 }
 
-/* line 711, ../sass/style.scss */
+/* line 765, ../sass/style.scss */
 ::-webkit-resizer {
-  width: 12px;
+  width: 10px;
 }
 
 @media (max-width: 1080px) {
@@ -844,58 +891,90 @@ a.click-to-top {
   }
 }
 @media (max-width: 1030px) {
-  /* line 31, ../sass/breakpoints/_1000px.scss */
+  /* line 30, ../sass/breakpoints/_1000px.scss */
+  .page-user .page-header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* line 34, ../sass/breakpoints/_1000px.scss */
+  .page-user .col-sm-12 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  /* line 38, ../sass/breakpoints/_1000px.scss */
+  .page-user .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  /* line 46, ../sass/breakpoints/_1000px.scss */
   .big-bg-image .title-wrap h2 {
     width: 100%;
   }
 
-  /* line 41, ../sass/breakpoints/_1000px.scss */
+  /* line 57, ../sass/breakpoints/_1000px.scss */
   .node-type-blog .row,
   .node-type-events .row,
   .node-type-community-projects .row,
-  .node-type-gallery .row {
+  .node-type-gallery .row,
+  .page-user .row {
     width: 100%;
   }
-  /* line 45, ../sass/breakpoints/_1000px.scss */
+  /* line 61, ../sass/breakpoints/_1000px.scss */
   .node-type-blog .node-blog,
   .node-type-blog .node-events,
   .node-type-blog .node-community-projects
   .node-gallery,
+  .node-type-blog .profile,
   .node-type-events .node-blog,
   .node-type-events .node-events,
   .node-type-events .node-community-projects
   .node-gallery,
+  .node-type-events .profile,
   .node-type-community-projects .node-blog,
   .node-type-community-projects .node-events,
   .node-type-community-projects .node-community-projects
   .node-gallery,
+  .node-type-community-projects .profile,
   .node-type-gallery .node-blog,
   .node-type-gallery .node-events,
   .node-type-gallery .node-community-projects
-  .node-gallery {
+  .node-gallery,
+  .node-type-gallery .profile,
+  .page-user .node-blog,
+  .page-user .node-events,
+  .page-user .node-community-projects
+  .node-gallery,
+  .page-user .profile {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 @media (max-width: 1000px) {
-  /* line 63, ../sass/breakpoints/_1000px.scss */
+  /* line 80, ../sass/breakpoints/_1000px.scss */
   .inner {
     width: 100%;
   }
 
-  /* line 67, ../sass/breakpoints/_1000px.scss */
+  /* line 84, ../sass/breakpoints/_1000px.scss */
   .top-menus {
     padding: 0px 10px;
   }
 
-  /* line 71, ../sass/breakpoints/_1000px.scss */
+  /* line 88, ../sass/breakpoints/_1000px.scss */
   .navigation-container {
     padding: 10px 10px;
   }
 
-  /* line 79, ../sass/breakpoints/_1000px.scss */
+  /* line 96, ../sass/breakpoints/_1000px.scss */
   .footer {
     padding: 0px 10px;
+  }
+}
+@media (max-width: 989px) {
+  /* line 5, ../sass/breakpoints/_900px.scss */
+  #gallery .owl-item img {
+    width: 100%;
   }
 }
 @media (max-width: 890px) {
@@ -1146,6 +1225,28 @@ a.click-to-top {
 @media (max-width: 490px) {
   /* line 5, ../sass/breakpoints/_400px.scss */
   #projects .views-field.views-field-field-image a img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* line 13, ../sass/breakpoints/_400px.scss */
+  .page-user .field-name-field-first-name,
+  .page-user .field-name-field-last-name {
+    display: inline-block;
+    font-family: 'OpenSans-Regular';
+    font-size: 45px;
+    font-size: 2.8125rem;
+    font-weight: 900;
+    margin: 15px 0;
+  }
+  /* line 21, ../sass/breakpoints/_400px.scss */
+  .page-user .field-name-field-last-name {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 400px) {
+  /* line 33, ../sass/breakpoints/_400px.scss */
+  .page-user .field-name-field-image img {
     width: 100%;
     height: auto;
   }

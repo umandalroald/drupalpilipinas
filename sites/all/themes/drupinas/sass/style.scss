@@ -601,7 +601,7 @@ h2 {
   }
 
   .views-row-last .views-field.views-field-nothing .title {
-    margin-top: 20px;
+    
   }
 
     
@@ -688,32 +688,87 @@ a.click-to-top {
 }
 
 
+.page-user {
+
+  .page-header {
+    @include font-size(25);
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+
+  .profile > h3 {
+    margin: 0;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .field-name-field-image {
+    img {
+      border-radius: 100%;
+      border: 10px solid $theme-blue;
+      -webkit-transition: all 0.3s ease;                  
+      -moz-transition: all 0.3s ease;                 
+      -o-transition: all 0.3s ease;   
+      -ms-transition: all 0.3s ease;          
+      transition: all 0.3s ease;
+      &:hover {
+        border-radius: 15%;
+      }
+    }
+  }
+
+  .field-name-field-first-name,
+  .field-name-field-last-name {
+    display: inline-block;
+    font-family: 'OpenSans-Regular';
+    @include font-size(65);
+    font-weight: 900;
+    margin: 15px 0;
+  }
+
+  .field-name-field-last-name {
+    margin-left: 10px;
+  }
+
+  .field-name-field-drupal-projects {
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+
+
 ::-webkit-scrollbar              {
-  width: 12px;
+  width: 10px;
 }
 ::-webkit-scrollbar-button       { 
   background: $theme-blue - 10;
-  width: 12px;
+  width: 10px;
 }
 ::-webkit-scrollbar-track        {
-  width: 12px;
+  width: 10px;
 }
 ::-webkit-scrollbar-track-piece  {
-  width: 12px;
+  width: 10px;
 }
 ::-webkit-scrollbar-thumb        {
-  width: 12px;
+  width: 10px;
   background: $theme-blue;
 }
 ::-webkit-scrollbar-corner       {
-  width: 12px;
+  width: 10px;
 }
 ::-webkit-resizer                {
-  width: 12px;
+  width: 10px;
 }
 
 
 @import 'breakpoints/1000px';
+@import 'breakpoints/900px';
 @import 'breakpoints/800px';
 @import 'breakpoints/700px';
 @import 'breakpoints/600px';

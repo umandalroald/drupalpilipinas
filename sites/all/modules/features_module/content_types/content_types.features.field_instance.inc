@@ -556,7 +556,7 @@ function content_types_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => '249x168_sponsors_homepage',
         ),
         'type' => 'image',
         'weight' => 0,

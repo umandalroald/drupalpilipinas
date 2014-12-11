@@ -55,7 +55,7 @@ function user_profiles_field_default_field_instances() {
     'description' => 'What are your current projects in Drupal? or finished projects?',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',

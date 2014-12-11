@@ -25,6 +25,11 @@
 
 }
 
+@media (max-width:450px) {
+
+
+}
+
 
 @media (max-width:400px) {
 
@@ -35,7 +40,17 @@
       height: auto;
     }
   }
+}
+
+.page-jobs {
+  .views-field-field-company-logo {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+
+
 
 }
 
-}

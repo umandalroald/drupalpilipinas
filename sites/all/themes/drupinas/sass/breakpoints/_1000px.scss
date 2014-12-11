@@ -23,11 +23,28 @@
 
 }
 
+@media (max-width:1050px) {
+
+.page-jobs {
+  .views-field-field-company-logo {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .views-field-nothing{
+    padding-left: 15px;
+  }
+}
+
+}
+
 
 @media (max-width:1030px) {
 
 .page-user,
-.node-type-page {
+.node-type-page,
+.page-jobs {
   .page-header {
     padding-left: 20px;
     padding-right: 20px;
@@ -42,7 +59,8 @@
   }
 }
 
-.node-type-page {
+.node-type-page,
+.page-jobs {
   .region.region-content {
     padding-left: 20px;
     padding-right: 20px;

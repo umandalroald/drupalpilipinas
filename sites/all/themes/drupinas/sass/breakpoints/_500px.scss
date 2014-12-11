@@ -44,3 +44,19 @@
 
 
 }
+
+
+@media (max-width:500px) {
+
+.page-jobs {
+  .views-field-field-company-logo {
+    display: none;
+    width: 100%;
+  }
+
+  .views-field-nothing{
+    width: 100%;
+  }
+}
+
+}

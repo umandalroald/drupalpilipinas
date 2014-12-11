@@ -841,12 +841,14 @@ a.click-to-top {
   margin-bottom: 20px;
 }
 
-/* line 748, ../sass/style.scss */
-.node-type-page .region.region-content {
+/* line 749, ../sass/style.scss */
+.node-type-page .region.region-content,
+.page-jobs .region.region-content {
   min-height: 850px;
 }
-/* line 752, ../sass/style.scss */
-.node-type-page .page-header {
+/* line 753, ../sass/style.scss */
+.node-type-page .page-header,
+.page-jobs .page-header {
   font-size: 55px;
   font-size: 3.4375rem;
   font-family: 'OpenSans-Regular';
@@ -857,38 +859,93 @@ a.click-to-top {
 }
 
 /* line 764, ../sass/style.scss */
+.page-jobs .page-header {
+  margin-top: 30px;
+}
+/* line 768, ../sass/style.scss */
+.page-jobs .view-content {
+  width: 100%;
+}
+/* line 772, ../sass/style.scss */
+.page-jobs .views-row {
+  vertical-align: top;
+  margin-bottom: 30px;
+}
+/* line 777, ../sass/style.scss */
+.page-jobs .views-field-field-company-logo,
+.page-jobs .views-field-nothing {
+  display: inline-block;
+  margin-right: -4px;
+  vertical-align: top;
+}
+/* line 784, ../sass/style.scss */
+.page-jobs .views-field-field-company-logo {
+  width: 27%;
+}
+/* line 788, ../sass/style.scss */
+.page-jobs .views-field-nothing {
+  width: 73%;
+}
+/* line 791, ../sass/style.scss */
+.page-jobs .views-field-nothing .title {
+  text-transform: uppercase;
+  font-size: 35px;
+  font-size: 2.1875rem;
+  font-weight: 900;
+  margin-bottom: 1px;
+}
+/* line 796, ../sass/style.scss */
+.page-jobs .views-field-nothing .title a {
+  text-decoration: none;
+}
+/* line 801, ../sass/style.scss */
+.page-jobs .views-field-nothing .date {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+/* line 806, ../sass/style.scss */
+.page-jobs .views-field-nothing .company {
+  margin-bottom: 5px;
+}
+/* line 808, ../sass/style.scss */
+.page-jobs .views-field-nothing .company .name {
+  font-weight: 900;
+}
+
+/* line 817, ../sass/style.scss */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* line 767, ../sass/style.scss */
+/* line 820, ../sass/style.scss */
 ::-webkit-scrollbar-button {
   background: #0069b0;
   width: 10px;
 }
 
-/* line 771, ../sass/style.scss */
+/* line 824, ../sass/style.scss */
 ::-webkit-scrollbar-track {
   width: 10px;
 }
 
-/* line 774, ../sass/style.scss */
+/* line 827, ../sass/style.scss */
 ::-webkit-scrollbar-track-piece {
   width: 10px;
 }
 
-/* line 777, ../sass/style.scss */
+/* line 830, ../sass/style.scss */
 ::-webkit-scrollbar-thumb {
   width: 10px;
   background: #0073ba;
 }
 
-/* line 781, ../sass/style.scss */
+/* line 834, ../sass/style.scss */
 ::-webkit-scrollbar-corner {
   width: 10px;
 }
 
-/* line 784, ../sass/style.scss */
+/* line 837, ../sass/style.scss */
 ::-webkit-resizer {
   width: 10px;
 }
@@ -909,38 +966,53 @@ a.click-to-top {
     margin-left: 15px;
   }
 }
+@media (max-width: 1050px) {
+  /* line 30, ../sass/breakpoints/_1000px.scss */
+  .page-jobs .views-field-field-company-logo img {
+    width: 100%;
+    height: auto;
+  }
+  /* line 35, ../sass/breakpoints/_1000px.scss */
+  .page-jobs .views-field-nothing {
+    padding-left: 15px;
+  }
+}
 @media (max-width: 1030px) {
-  /* line 31, ../sass/breakpoints/_1000px.scss */
+  /* line 48, ../sass/breakpoints/_1000px.scss */
   .page-user .page-header,
-  .node-type-page .page-header {
+  .node-type-page .page-header,
+  .page-jobs .page-header {
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* line 35, ../sass/breakpoints/_1000px.scss */
+  /* line 52, ../sass/breakpoints/_1000px.scss */
   .page-user .col-sm-12,
-  .node-type-page .col-sm-12 {
+  .node-type-page .col-sm-12,
+  .page-jobs .col-sm-12 {
     padding-right: 0px;
     padding-left: 0px;
   }
-  /* line 39, ../sass/breakpoints/_1000px.scss */
+  /* line 56, ../sass/breakpoints/_1000px.scss */
   .page-user .row,
-  .node-type-page .row {
+  .node-type-page .row,
+  .page-jobs .row {
     margin-right: 0px;
     margin-left: 0px;
   }
 
-  /* line 46, ../sass/breakpoints/_1000px.scss */
-  .node-type-page .region.region-content {
+  /* line 64, ../sass/breakpoints/_1000px.scss */
+  .node-type-page .region.region-content,
+  .page-jobs .region.region-content {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  /* line 55, ../sass/breakpoints/_1000px.scss */
+  /* line 73, ../sass/breakpoints/_1000px.scss */
   .big-bg-image .title-wrap h2 {
     width: 100%;
   }
 
-  /* line 68, ../sass/breakpoints/_1000px.scss */
+  /* line 86, ../sass/breakpoints/_1000px.scss */
   .node-type-blog .row,
   .node-type-events .row,
   .node-type-community-projects .row,
@@ -948,7 +1020,7 @@ a.click-to-top {
   .page-user .row {
     width: 100%;
   }
-  /* line 72, ../sass/breakpoints/_1000px.scss */
+  /* line 90, ../sass/breakpoints/_1000px.scss */
   .node-type-blog .node-blog,
   .node-type-blog .node-events,
   .node-type-blog .node-community-projects
@@ -979,22 +1051,22 @@ a.click-to-top {
   }
 }
 @media (max-width: 1000px) {
-  /* line 91, ../sass/breakpoints/_1000px.scss */
+  /* line 109, ../sass/breakpoints/_1000px.scss */
   .inner {
     width: 100%;
   }
 
-  /* line 95, ../sass/breakpoints/_1000px.scss */
+  /* line 113, ../sass/breakpoints/_1000px.scss */
   .top-menus {
     padding: 0px 10px;
   }
 
-  /* line 99, ../sass/breakpoints/_1000px.scss */
+  /* line 117, ../sass/breakpoints/_1000px.scss */
   .navigation-container {
     padding: 10px 10px;
   }
 
-  /* line 107, ../sass/breakpoints/_1000px.scss */
+  /* line 125, ../sass/breakpoints/_1000px.scss */
   .footer {
     padding: 0px 10px;
   }
@@ -1250,6 +1322,17 @@ a.click-to-top {
     width: 100%;
   }
 }
+@media (max-width: 500px) {
+  /* line 52, ../sass/breakpoints/_500px.scss */
+  .page-jobs .views-field-field-company-logo {
+    display: none;
+    width: 100%;
+  }
+  /* line 57, ../sass/breakpoints/_500px.scss */
+  .page-jobs .views-field-nothing {
+    width: 100%;
+  }
+}
 @media (max-width: 490px) {
   /* line 5, ../sass/breakpoints/_400px.scss */
   #projects .views-field.views-field-field-image a img {
@@ -1273,9 +1356,15 @@ a.click-to-top {
   }
 }
 @media (max-width: 400px) {
-  /* line 33, ../sass/breakpoints/_400px.scss */
+  /* line 38, ../sass/breakpoints/_400px.scss */
   .page-user .field-name-field-image img {
     width: 100%;
     height: auto;
+  }
+
+  /* line 46, ../sass/breakpoints/_400px.scss */
+  .page-jobs .views-field-field-company-logo {
+    display: block;
+    margin-bottom: 15px;
   }
 }

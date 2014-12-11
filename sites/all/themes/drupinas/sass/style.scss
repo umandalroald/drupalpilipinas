@@ -690,6 +690,10 @@ a.click-to-top {
 
 .page-user {
 
+  .region.region-content {
+    min-height: 850px;
+  }
+
   .page-header {
     @include font-size(25);
     padding: 0;

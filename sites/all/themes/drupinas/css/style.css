@@ -787,6 +787,10 @@ a.click-to-top {
 }
 
 /* line 693, ../sass/style.scss */
+.page-user .region.region-content {
+  min-height: 850px;
+}
+/* line 697, ../sass/style.scss */
 .page-user .page-header {
   font-size: 25px;
   font-size: 1.5625rem;
@@ -794,15 +798,15 @@ a.click-to-top {
   margin-top: 30px;
   margin-bottom: 0px;
 }
-/* line 700, ../sass/style.scss */
+/* line 704, ../sass/style.scss */
 .page-user .profile > h3 {
   margin: 0;
 }
-/* line 704, ../sass/style.scss */
+/* line 708, ../sass/style.scss */
 .page-user .content {
   text-align: center;
 }
-/* line 709, ../sass/style.scss */
+/* line 713, ../sass/style.scss */
 .page-user .field-name-field-image img {
   border-radius: 100%;
   border: 10px solid #0073ba;
@@ -812,11 +816,11 @@ a.click-to-top {
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 717, ../sass/style.scss */
+/* line 721, ../sass/style.scss */
 .page-user .field-name-field-image img:hover {
   border-radius: 15%;
 }
-/* line 723, ../sass/style.scss */
+/* line 727, ../sass/style.scss */
 .page-user .field-name-field-first-name,
 .page-user .field-name-field-last-name {
   display: inline-block;
@@ -826,50 +830,50 @@ a.click-to-top {
   font-weight: 900;
   margin: 15px 0;
 }
-/* line 732, ../sass/style.scss */
+/* line 736, ../sass/style.scss */
 .page-user .field-name-field-last-name {
   margin-left: 10px;
 }
-/* line 736, ../sass/style.scss */
+/* line 740, ../sass/style.scss */
 .page-user .field-name-field-drupal-projects {
   text-align: left;
   margin-top: 40px;
   margin-bottom: 20px;
 }
 
-/* line 745, ../sass/style.scss */
+/* line 749, ../sass/style.scss */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* line 748, ../sass/style.scss */
+/* line 752, ../sass/style.scss */
 ::-webkit-scrollbar-button {
   background: #0069b0;
   width: 10px;
 }
 
-/* line 752, ../sass/style.scss */
+/* line 756, ../sass/style.scss */
 ::-webkit-scrollbar-track {
   width: 10px;
 }
 
-/* line 755, ../sass/style.scss */
+/* line 759, ../sass/style.scss */
 ::-webkit-scrollbar-track-piece {
   width: 10px;
 }
 
-/* line 758, ../sass/style.scss */
+/* line 762, ../sass/style.scss */
 ::-webkit-scrollbar-thumb {
   width: 10px;
   background: #0073ba;
 }
 
-/* line 762, ../sass/style.scss */
+/* line 766, ../sass/style.scss */
 ::-webkit-scrollbar-corner {
   width: 10px;
 }
 
-/* line 765, ../sass/style.scss */
+/* line 769, ../sass/style.scss */
 ::-webkit-resizer {
   width: 10px;
 }

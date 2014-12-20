@@ -5,6 +5,22 @@
  */
 
 /**
+ * Implements hook_ctools_plugin_api().
+ */
+function content_types_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "openlayers" && $api == "openlayers_maps") {
+    return array("version" => "1");
+  }
+}
+
+/**
+ * Implements hook_views_api().
+ */
+function content_types_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_node_info().
  */
 function content_types_node_info() {

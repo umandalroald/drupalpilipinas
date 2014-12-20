@@ -325,6 +325,54 @@ function content_types_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-events-field_location'
+  $field_instances['node-events-field_location'] = array(
+    'bundle' => 'events',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'geofield',
+        'settings' => array(
+          'data' => 'full',
+        ),
+        'type' => 'geofield_wkt',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_location',
+    'label' => 'Location',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'openlayers',
+      'settings' => array(
+        'allow_edit' => 1,
+        'data_storage' => 'single',
+        'feature_types' => array(
+          'path' => 'path',
+          'point' => 'point',
+          'polygon' => 'polygon',
+        ),
+        'openlayers_map' => 'geofield_widget_map',
+      ),
+      'type' => 'geofield_openlayers',
+      'weight' => 6,
+    ),
+  );
+
   // Exported field_instance: 'node-gallery-field_about_the_image'
   $field_instances['node-gallery-field_about_the_image'] = array(
     'bundle' => 'gallery',
@@ -586,6 +634,16 @@ function content_types_field_default_field_instances() {
     'widget' => array(
       'module' => 'image',
       'settings' => array(
+        'insert' => 0,
+        'insert_absolute' => FALSE,
+        'insert_class' => '',
+        'insert_default' => array(
+          0 => 'auto',
+        ),
+        'insert_styles' => array(
+          0 => 'auto',
+        ),
+        'insert_width' => '',
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
@@ -847,6 +905,7 @@ function content_types_field_default_field_instances() {
   t('Event Sponsors');
   t('Help to sort the images');
   t('Image');
+  t('Location');
   t('Photo');
   t('Slider Image');
   t('Support Text');

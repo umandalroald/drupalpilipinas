@@ -1,0 +1,49 @@
+<?php
+
+/*
+ * Implements hook_ckeditor_plugin().
+ */
+function drupal_pilipinas_core_ckeditor_plugin() {
+  // This will register the widgets as new CKEditor plugins.
+  // Items would appear in the plugins list on the profile setting page:
+  // "admin/config/content/ckeditor/edit/Advanced"
+  $items = array();
+
+  $items['lineutils'] = array(
+    'name' => 'lineutils',
+    'desc' => t('Line Utilities: Leaflet Maps Dependency'),
+    'path' => drupal_get_path('module', 'drupal_pilipinas_core') . '/ckeditor_plugins/lineutils/',
+    /*'buttons' => array(
+      'here_maps' => array(
+        'label' => 'HERE Maps',
+        'icon' => 'icons/here_maps.png',
+      ),
+    ),*/
+  );
+
+  $items['widget'] = array(
+    'name' => 'widget',
+    'desc' => t('Widget: Leaflet Maps Dependency'),
+    'path' => drupal_get_path('module', 'drupal_pilipinas_core') . '/ckeditor_plugins/widget/',
+    /*'buttons' => array(
+      'grouped_texts' => array(
+        'label' => 'Grouped Texts',
+        'icon' => 'icons/grouped_texts.png',
+      ),
+    ),*/
+  );
+
+  $items['leaflet'] = array(
+    'name' => 'leaflet',
+    'desc' => t('Plugin for inserting Leaflet Maps.'),
+    'path' => drupal_get_path('module', 'drupal_pilipinas_core') . '/ckeditor_plugins/leaflet/',
+    'buttons' => array(
+      'leaflet' => array(
+        'label' => 'Leaflet Maps',
+        'icon' => 'icons/leaflet.png',
+      ),
+    ),
+  );
+
+  return $items;
+}

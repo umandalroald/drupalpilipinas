@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Drupal Pilipinas Output Map feature.
+ */
+
+include_once 'drupal_pilipinas_output_map.features.inc';

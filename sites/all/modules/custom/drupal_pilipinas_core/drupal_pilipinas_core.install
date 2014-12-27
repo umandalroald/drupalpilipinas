@@ -15,3 +15,14 @@ function drupal_pilipinas_core_update_7001() {
 
   return t("Successfully enabled OpenLayers UI module.");
 }
+
+/**
+ * UPDATE: Enable the Drupal Pilipinas Input Widget Map features module.
+ */
+function drupal_pilipinas_core_update_7002() {
+  // Enable the module.
+  $modules = array('drupal_pilipinas_input_widget_map');
+  module_enable($modules);
+
+  return t("Successfully enabled Drupal Pilipinas Input Widget Map features module.");
+}

@@ -34,8 +34,19 @@ function drupal_pilipinas_input_widget_map_openlayers_maps() {
       ),
     ),
     'behaviors' => array(
+      'openlayers_behavior_fullscreen' => array(
+        'activated' => 0,
+      ),
       'openlayers_behavior_geofield' => array(),
       'openlayers_behavior_keyboarddefaults' => array(),
+      'openlayers_behavior_layerswitcher' => array(
+        'ascending' => 1,
+        'sortBaseLayer' => '0',
+        'roundedCorner' => 1,
+        'roundedCornerColor' => '#222222',
+        'maximizeDefault' => 0,
+        'div' => '',
+      ),
       'openlayers_behavior_mouseposition' => array(
         'prefix' => '',
         'separator' => ', ',
@@ -44,23 +55,18 @@ function drupal_pilipinas_input_widget_map_openlayers_maps() {
         'emptyString' => '',
       ),
       'openlayers_behavior_navigation' => array(
-        'zoomWheelEnabled' => 0,
+        'zoomWheelEnabled' => 1,
         'zoomBoxEnabled' => 1,
-        'documentDrag' => 0,
+        'documentDrag' => 1,
       ),
       'openlayers_behavior_panzoombar' => array(
         'zoomWorldIcon' => 0,
         'panIcons' => 1,
       ),
       'openlayers_behavior_scaleline' => array(),
-      'openlayers_behavior_fullscreen' => array(
-        'activated' => 0,
-      ),
     ),
     'default_layer' => 'mapquest_osm',
     'layers' => array(
-      'google_normal' => 'google_normal',
-      'google_physical' => 'google_physical',
       'mapquest_osm' => 'mapquest_osm',
       'mapquest_openaerial' => 'mapquest_openaerial',
     ),
@@ -74,7 +80,7 @@ function drupal_pilipinas_input_widget_map_openlayers_maps() {
       'geofield_formatter' => '0',
       'openlayers_kml_example' => '0',
       'openlayers_geojson_picture_this' => '0',
-      'custom_overlay_openlayers_1' => '0',
+      'custom_overlay_openlayers_1' => 'default_marker_blue',
     ),
     'layer_styles_select' => array(
       'geofield_formatter' => '0',
@@ -105,7 +111,7 @@ function drupal_pilipinas_input_widget_map_openlayers_maps() {
     'styles' => array(
       'default' => 'default',
       'select' => 'default',
-      'temporary' => 'default',
+      'temporary' => 'default_marker_blue',
     ),
   );
   $export['clone_of_geofield_widget_map'] = $openlayers_maps;

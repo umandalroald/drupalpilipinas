@@ -366,7 +366,7 @@ function content_types_field_default_field_instances() {
           'point' => 'point',
           'polygon' => 'polygon',
         ),
-        'openlayers_map' => 'geofield_widget_map',
+        'openlayers_map' => 'clone_of_geofield_widget_map',
       ),
       'type' => 'geofield_openlayers',
       'weight' => 6,

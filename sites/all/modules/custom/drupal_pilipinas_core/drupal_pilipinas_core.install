@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Drupal Pilipinas Core .install.
+ */
+
+/**
+ * UPDATE: Enable OpenLayers UI module.
+ */
+function drupal_pilipinas_core_update_7001() {
+  // Enable the module.
+  $modules = array('openlayers_ui');
+  module_enable($modules);
+
+  return t("Successfully enabled OpenLayers UI module.");
+}

@@ -1,0 +1,11 @@
+name = Drupal Pilipinas Input Widget Map
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = drupal_pilipinas_input_widget_map
+dependencies[] = ctools
+dependencies[] = openlayers
+features[ctools][] = openlayers:openlayers_maps:1
+features[features_api][] = api:2
+features[openlayers_maps][] = clone_of_geofield_widget_map
+project path = sites/all/modules/features_module

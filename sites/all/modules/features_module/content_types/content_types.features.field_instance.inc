@@ -337,8 +337,9 @@ function content_types_field_default_field_instances() {
         'module' => 'geofield',
         'settings' => array(
           'data' => 'full',
+          'map_preset' => 'clone_of_clone_of_geofield_widget_map',
         ),
-        'type' => 'geofield_wkt',
+        'type' => 'geofield_openlayers',
         'weight' => 5,
       ),
       'teaser' => array(
